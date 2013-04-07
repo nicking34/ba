@@ -1,0 +1,490 @@
+[ 2013-04-06T17:57:47+08:00 ] ERR: (ThinkException) 非法操作:checkLogin
+[ 2013-04-06T17:57:47+08:00 ] 0.0.0.0 /ba/index.php/Public/checkLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001527s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001642s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T17:58:22+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T17:58:22+08:00 ] 0.0.0.0 /ba/index.php/Public/themes/public.css
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001481s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001590s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T17:58:22+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T17:58:22+08:00 ] 0.0.0.0 /ba/index.php/Public/js/jquery-1.7.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001694s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T17:58:22+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T17:58:22+08:00 ] 0.0.0.0 /ba/index.php/Public/js/nav.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001509s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001598s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T17:59:12+08:00 ] 0.0.0.0 /ba/index.php/Public/checkLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001713s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001458s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001551s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016272s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001071s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001092s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000964s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004895s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2013-04-06T17:59:15+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T17:59:15+08:00 ] 0.0.0.0 /ba/index.php/Public/themes/public.css
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001938s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002044s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T17:59:15+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T17:59:15+08:00 ] 0.0.0.0 /ba/index.php/Public/js/nav.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001264s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001367s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T17:59:16+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T17:59:16+08:00 ] 0.0.0.0 /ba/index.php/Public/js/jquery-1.7.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002188s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002303s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005242s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:03:33+08:00 ] 0.0.0.0 /ba/index.php/Public/checkLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001644s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001424s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001511s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013497s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001304s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002073s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001228s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006240s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001372s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001447s ]
+
+[ 2013-04-06T18:03:36+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:03:36+08:00 ] 0.0.0.0 /ba/index.php/Public/js/jquery-1.7.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002940s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003043s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:03:36+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:03:36+08:00 ] 0.0.0.0 /ba/index.php/Public/themes/public.css
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002467s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002612s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:03:36+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:03:36+08:00 ] 0.0.0.0 /ba/index.php/Public/js/nav.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001632s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001742s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:03:40+08:00 ] 0.0.0.0 /ba/index.php/Public/checkLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001864s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001965s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001309s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001396s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013116s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001394s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001046s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001228s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005184s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001596s ]
+
+[ 2013-04-06T18:03:44+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:03:44+08:00 ] 0.0.0.0 /ba/index.php/Public/themes/public.css
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001595s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:03:44+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:03:44+08:00 ] 0.0.0.0 /ba/index.php/Public/js/jquery-1.7.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001534s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001627s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:03:44+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:03:44+08:00 ] 0.0.0.0 /ba/index.php/Public/js/nav.js
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001076s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001174s ]
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: file G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class PublicAction could not be converted to string G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type G:\program\thinkphp\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2013-04-06T18:14:27+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:14:27+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:14:27+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:31:59+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:31:59+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:31:59+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T18:32:02+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T18:34:18+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:34:18+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:18+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:26+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:34:26+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:26+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:46+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:34:46+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:46+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:57+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:34:57+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:34:57+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:40:19+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:40:19+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:40:19+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:40:44+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:40:44+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:40:44+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:46:12+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T18:46:12+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T18:46:12+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:26:54+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:26:54+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:26:54+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:01+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:27:01+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:01+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:08+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:27:08+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:08+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:16+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:27:16+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:16+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:28+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:27:28+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:27:29+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:39:24+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:39:24+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:39:24+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:39:32+08:00 ] ERR: (ThinkException) 非法操作:HOME
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:39:37+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:40:21+08:00 ] ERR: (ThinkException) 无法加载模块:index.php
+[ 2013-04-06T20:40:39+08:00 ] ERR: (ThinkException) 无法加载模块:index.php
+[ 2013-04-06T20:40:41+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:40:41+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:40:41+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:40:45+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:40:45+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:40:45+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:40:45+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:40:45+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:40:45+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:40:46+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:40:46+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:47:05+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:47:05+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:47:05+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T20:47:12+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:44:58+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:44:58+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:44:58+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:45:03+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:30+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:46:30+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:30+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:46:30+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:30+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:46:30+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:46:31+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:32+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:32+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:46:32+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:47:08+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:47:08+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:47:08+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:47:16+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:47:16+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:47:17+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:47:17+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:47:17+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:47:17+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:47:17+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:47:17+08:00 ] ERR: (ThinkException) 非法操作:images
+[ 2013-04-06T21:58:24+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:58:24+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:58:24+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:58:52+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T21:58:52+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T21:58:52+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T22:11:08+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T22:11:08+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T22:11:08+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T22:11:21+08:00 ] ERR: (ThinkException) 无法加载模块:Feed
+[ 2013-04-06T22:18:09+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T22:18:09+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T22:18:09+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T22:20:57+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-06T22:20:57+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-06T22:20:57+08:00 ] ERR: (ThinkException) 非法操作:js

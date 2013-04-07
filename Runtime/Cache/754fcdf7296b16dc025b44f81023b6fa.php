@@ -23,21 +23,20 @@ var PUBLIC = '__PUBLIC__';
 
 
 <div class="content">
-<div class="title">注册新用户</div>
+<div class="title">发布短篇</div>
 <table>
-<FORM method="post" action="__URL__/insert">
+<FORM method="post" action="__URL__/insertSfeed">
 <tr>
-	<td>用户名</td>
-	<td><input type="text" name="uname"></td>
+	<td><input type="text" name="content" maxlength=500
+	value="八卦下身边的奇葩、奇事、奇闻……通过审核后将在最新栏目显示哦。"></td>
 </tr>
 <tr>
-	<td>密码</td>
-	<td><input type="text" name="password"></td>
+	<td><input type="checkbox" name="anonymous" value=1>匿名</td>
 </tr>
+<input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
 <tr>
-	<td><input type="submit" value="注册"></td>
+	<td><input type="submit" value="发布"></td>
 </tr>
-
 </FORM>
 </table>
 </div>

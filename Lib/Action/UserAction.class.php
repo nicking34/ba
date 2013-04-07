@@ -12,5 +12,8 @@ class UserAction extends Action{
 		}else{
 			$this->error($User->getError());
 		}
+		$ucount = M('User_count');
+		$data['uid'] = $result;
+		$ucount->add($data);
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 return array(
-	//'配置项'=>'配置值'
+	//'閰嶇疆椤�=>'閰嶇疆鍊�
 	'DB_TYPE'=>'mysql',
 	'DB_HOST'=>'localhost',
 	'DB_NAME'=>'ba',
@@ -8,5 +8,6 @@ return array(
 	'DB_PWD'=>'',
 	'DB_PORT'=>3306,
 	'DB_PREFIX'=>'',
+	'SHOW_PAGE_TRACE' =>true,
 );
 ?>

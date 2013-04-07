@@ -23,21 +23,17 @@ var PUBLIC = '__PUBLIC__';
 
 
 <div class="content">
-<div class="title">注册新用户</div>
+<div class="title">新建直播</div>
 <table>
-<FORM method="post" action="__URL__/insert">
+<FORM method="post" action="__URL__/insertLfeed">
 <tr>
-	<td>用户名</td>
-	<td><input type="text" name="uname"></td>
+	<td><input type="text" name="title" maxlength=100
+	value="请输入直播的标题"></td>
 </tr>
+<input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
 <tr>
-	<td>密码</td>
-	<td><input type="text" name="password"></td>
+	<td><input type="submit" value="发布"></td>
 </tr>
-<tr>
-	<td><input type="submit" value="注册"></td>
-</tr>
-
 </FORM>
 </table>
 </div>
