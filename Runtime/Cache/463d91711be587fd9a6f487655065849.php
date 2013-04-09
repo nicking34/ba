@@ -6,6 +6,9 @@
 <link rel="stylesheet" type="text/css" href="../Public/themes/public.css">
 <script src="../Public/js/jquery-1.7.js" type="text/javascript"></script>
 <script src="../Public/js/nav.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Public/themes/public.css" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/nav.js"></script>
 <script language="JavaScript">
 <!--
 var URL = '__URL__';
@@ -18,22 +21,29 @@ var PUBLIC = '__PUBLIC__';
 	<?php echo (session('uname')); ?>
 	<?php echo (session('uid')); ?>
 
-
 <div class="content">
-<div class="title">发布短篇</div>
+<div class="title">写直播</div>
 <table>
-<FORM method="post" action="__URL__/insertSfeed">
+<FORM method="post" action="__URL__/insertLstore">
 <tr>
-	<td><input type="text" name="content" maxlength=500
-	value="八卦下身边的奇葩、奇事、奇闻……通过审核后将在最新栏目显示哦。"></td>
+<td>选择标题</td>
+<td>
+<select name="lfeedid">
+<?php if(is_array($lfeedlist)): $i = 0; $__LIST__ = $lfeedlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value=<?php echo ($vo["lfeedid"]); ?>><?php echo ($vo["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+</select>
+</td>
 </tr>
+
 <tr>
-	<td><input type="checkbox" name="anonymous" value=1>匿名</td>
+	<td><input type="text" name="content" maxlength=100
+	value="请续写你的直播"></td>
 </tr>
 <input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
+<input type="hidden" name='status' value="2">
 <tr>
 	<td><input type="submit" value="发布"></td>
 </tr>
+
 </FORM>
 </table>
 </div>

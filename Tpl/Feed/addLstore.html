@@ -1,0 +1,33 @@
+<include file="Public:header" />
+
+<div class="content">
+<div class="title">写直播</div>
+<table>
+<FORM method="post" action="__URL__/insertLstore">
+<tr>
+<td>选择标题</td>
+<td>
+<select name="lfeedid">
+<volist name="lfeedlist" id="vo">
+<option value={$vo.lfeedid}>{$vo.title}</option>
+</volist>
+</select>
+</td>
+</tr>
+
+<tr>
+	<td><input type="text" name="content" maxlength=100
+	value="请续写你的直播"></td>
+</tr>
+<input type="hidden" name='uid' value='{$Think.session.uid}'>
+<input type="hidden" name='status' value="2">
+<tr>
+	<td><input type="submit" value="发布"></td>
+</tr>
+
+</FORM>
+</table>
+</div>
+
+</body>
+</html>
