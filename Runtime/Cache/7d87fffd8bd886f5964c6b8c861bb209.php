@@ -1,4 +1,4 @@
-<!--右侧栏-->
+<?php if (!defined('THINK_PATH')) exit();?><!--右侧栏-->
 <div id="rightbox">
 	<div class="namecard">
 	<a href="#"><img src="images/logo.jpg"></a>
@@ -7,7 +7,7 @@
 	<div class="infbox">
 	<table border="0">
 	<tr>
-	<td><a href="#"><span >短篇</span>{$cdata.sfeed}</a></td>
+	<td><a href="#"><span >短篇</span><?php echo ($cdata["sfeed"]); ?></a></td>
 	<td><a href="#"><span >直播 </span>1</a></td>
 	</tr>
 	<tr>

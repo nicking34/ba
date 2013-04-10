@@ -11,7 +11,7 @@ class PublicAction extends Action{
         $map['password'] = $_POST['password'];
 		$data = M("User")->where($map)->find();
 		if($data){
-			$this->success('正确',__APP__.'/User/home');
+			$this->success('正确',__APP__.'/Public/home');
 		}else{
 			$this->error('错误');
 		}
@@ -19,4 +19,52 @@ class PublicAction extends Action{
 			$_SESSION[$key] = $value ;
 		$_SESSION['islogin'] = 1;		       
 	}
+	
+	public function home(){
+		//显示USER_COUNT信息
+		$usercount = M('User_count');
+		$map['uid'] = $_SESSION['uid'];
+		$countlist = $usercount->where($map)->find();
+		$this->assign('cdata',$countlist);
+		
+		//显示sfeed
+		$sfeed = M('Sfeed');
+		$user = M('User');
+		$slist = $sfeed->limit(10)->order('ctime')->select();
+		foreach($slist as $key => $map){
+			$data['uid'] = $map['uid'];
+			$slist[$key]['uname'] = $user->where($data)->getField('uname');
+		}
+		$this->assign('slist',$slist);
+		
+		$this->display();
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+[ 2013-04-10T09:46:27+08:00 ] ERR: (ThinkException) 非法操作:home
+[ 2013-04-10T09:46:28+08:00 ] ERR: (ThinkException) 模板不存在[G:/program/ba/Tpl/User/home.html]

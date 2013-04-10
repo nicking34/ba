@@ -85,11 +85,11 @@ var PUBLIC = '__PUBLIC__';
 	<table border="0">
 	<tr>
 	<td><a href="#"><span >短篇</span><?php echo ($cdata["sfeed"]); ?></a></td>
-	<td><a href="#"><span >直播 </span>1</a></td>
+	<td><a href="#"><span >直播 </span><?php echo ($cdata["lfeed"]); ?></a></td>
 	</tr>
 	<tr>
-	<td><a href="#"><span >粉丝</span> 50</a></td>
-	<td> <a href="#"><span >关注 </span>100</a></td>
+	<td><a href="#"><span >粉丝</span><?php echo ($cdata["fans"]); ?></a></td>
+	<td> <a href="#"><span >关注 </span><?php echo ($cdata["attention"]); ?></a></td>
 	</tr>
 	</table>
 	</div>
@@ -116,31 +116,31 @@ var PUBLIC = '__PUBLIC__';
 <!--/二级导航-->
 
 <!--feed-->
-	<li class="feed_line">
+<?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
 		<!--头像与用户名-->
 		<div class="userPic">
 		<a href="#"><img src="images/logo.jpg"></a>
-		<span><a href="#">nick</a>:</span>	
+		<span><a href="#"><?php echo ($sfeed["uname"]); ?></a>:</span>	
 		</div>
 		<!--/头像与用户名-->
 		<!--内容-->
 		<div class="msgCnt">
-		<p>晚上上课在八楼，等了两轮电梯终于挤进去了，电梯里一个女生对另一个女生说:这电梯太小了，要是是货梯就好了！另一女生说:你又不是货！这时角落传出一个声音:是货，二货，，，顿时电梯安静了，那个女生一脸黑线！</p>		
+		<p><?php echo ($sfeed["content"]); ?></p>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
 			<span class="islike">
-			<img src="images/up.png">100</span>
+			<img src="images/up.png"><?php echo ($sfeed["islike"]); ?></span>
 			<span class="islike">
-			<img src="images/down.png">50</span>
+			<img src="images/down.png"><?php echo ($sfeed["unlike"]); ?></span>
 			<!--/顶与踩-->
 			<span class="share">
-			<a href="#">评论()</a>
+			<a href="#">评论(<?php echo ($sfeed["comment"]); ?>)</a>
 			</span>
 			<span class="share">
-			<a href="#">收藏</a>
+			<a href="#">收藏(<?php echo ($sfeed["store"]); ?>)</a>
 			</span>			
 		</div>
 		<!--/操作-->
@@ -149,44 +149,7 @@ var PUBLIC = '__PUBLIC__';
 		
 		</div>
 		<!--/评论-->
-	</li>
-<!--/feed-->
-
-<!--feed-->
-	<li class="feed_line">
-		<!--头像与用户名-->
-		<div class="userPic">
-		<a href="#"><img src="images/logo.jpg"></a>
-		<span><a href="#">nick</a>:</span>	
-		</div>
-		<!--/头像与用户名-->
-		<!--内容-->
-		<div class="msgCnt">
-		<p>晚上上课在八楼，等了两轮电梯终于挤进去了，电梯里一个女生对另一个女生说:这电梯太小了，要是是货梯就好了！另一女生说:你又不是货！这时角落传出一个声音:是货，二货，，，顿时电梯安静了，那个女生一脸黑线！</p>		
-		</div>
-		<!--/内容-->
-		<!--操作-->
-		<div class="operate">
-			<!--顶与踩-->
-			<span class="islike">
-			<img src="images/up.png">100</span>
-			<span class="islike">
-			<img src="images/down.png">50</span>
-			<!--/顶与踩-->
-			<span class="share">
-			<a href="#">评论()</a>
-			</span>
-			<span class="share">
-			<a href="#">收藏</a>
-			</span>			
-		</div>
-		<!--/操作-->
-		<!--评论-->
-		<div class="comment">
-		
-		</div>
-		<!--/评论-->
-	</li>
+	</li><?php endforeach; endif; else: echo "" ;endif; ?>
 <!--/feed-->
 
 	</ul>

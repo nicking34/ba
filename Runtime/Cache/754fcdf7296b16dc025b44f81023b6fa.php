@@ -17,6 +17,7 @@ var PUBLIC = '__PUBLIC__';
 <body>
 	<?php echo (session('uname')); ?>
 	<?php echo (session('uid')); ?>
+	
 
 
 <div class="content">
