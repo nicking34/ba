@@ -1,4 +1,4 @@
-/*°Ë°ÉCSS±í*/
+/*å…«å§CSSè¡¨*/
 
 a{
 	text-decoration:none;
@@ -34,7 +34,7 @@ body {
 	margin-left:20px;
 }
 
-/*¶¥²¿*/
+/*é¡¶éƒ¨*/
 #header {
 	width:100%;
 	margin:-12px auto 0 auto;
@@ -54,7 +54,7 @@ body {
 }
 */
 
-/*¶¥²¿µ¼º½*/
+/*é¡¶éƒ¨å¯¼èˆª*/
 #nav {
 	width:1040px;
 	margin:auto;
@@ -80,7 +80,7 @@ ul{
 }
 
 #nav ul li a:hover{
-	color:rgb(126,206,253);/*À¶É«*/
+	color:rgb(126,206,253);/*è“è‰²*/
 }
 
 #nav span{
@@ -120,7 +120,7 @@ ul{
 
 
 
-/*ÄÚÈİÀ¸*/
+/*å†…å®¹æ */
 #contentbox{
 	width:1024px;
 	margin-left:auto;
@@ -130,7 +130,7 @@ ul{
 }
 
 
-/*×ó²àÀ¸*/
+/*å·¦ä¾§æ */
 #leftbox{
 	width:750px;
 	/*height:100%;*/
@@ -140,7 +140,7 @@ ul{
 }
 
 
-/*¶ş¼¶µ¼º½*/
+/*äºŒçº§å¯¼èˆª*/
 #secnav{
 	background:white;
 	margin:0;
@@ -200,6 +200,10 @@ ul{
 	font-size:14px;
 }
 
+.msgCnt h3{
+	color:rgb(199,183,115);
+}
+
 .islike{
 	display:inline-block;
 	border:solid rgb(200,200,200) thin ;
@@ -221,7 +225,7 @@ ul{
 }
 
 
-/*ÓÒ²àÀ¸*/
+/*å³ä¾§æ */
 #rightbox{
 	float:right;
 	width:250px;

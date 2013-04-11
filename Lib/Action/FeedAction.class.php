@@ -71,6 +71,28 @@ class FeedAction extends Action{
 	}
 	
 
+	public function leftbox(){
+		//显示sfeed
+		$sfeed = M('Sfeed');
+		$user = M('User');
+		$lfeed = M('Lfeed');
+		$lstore = M('Lstore');
+		$slist = $sfeed->limit(20)->order('ctime')->select();
+		foreach($slist as $key => $map){
+			$data['uid'] = $map['uid'];
+			$slist[$key]['uname'] = $user->where($data)->getField('uname');
+				
+			if($slist[$key]['status'] == 2){
+				$data1['sfeedid'] = $map['sfeedid'] ;
+				$lstore_data = $lstore->where($data1)->find();
+				$slist[$key]['floor'] = $lstore_data['floor'];
+				$data2['lfeedid'] = $lstore_data['lfeedid'];
+				$slist[$key]['title'] = $lfeed->where($data2)->getField('title');
+			}
+		}
+		$this->assign('slist',$slist);
+		//$this->display();
+	}
 	
 }
 ?>

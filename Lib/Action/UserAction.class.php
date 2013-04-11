@@ -23,6 +23,6 @@ class UserAction extends Action{
 		$map['uid'] = $_SESSION['uid'];
 		$countlist = $usercount->where($map)->find();		
 		$this->assign('cdata',$countlist);
-		$this->display('User:home');			
+		//$this->display('User:rightbox');			
 	}
 }

@@ -78,8 +78,8 @@ var PUBLIC = '__PUBLIC__';
 <!--右侧栏-->
 <div id="rightbox">
 	<div class="namecard">
-	<a href="#"><img src="images/logo.jpg"></a>
-	<span>卡布奇诺</span>
+	<a href="#"><img src="../Public/images/logo.jpg"></a>
+	<span><?php echo (session('uname')); ?></span>
 	</div>
 	<div class="infbox">
 	<table border="0">
@@ -94,7 +94,6 @@ var PUBLIC = '__PUBLIC__';
 	</table>
 	</div>
 </div>
-
 <!--/右侧栏-->
 <!--/右侧栏-->
 
@@ -118,23 +117,24 @@ var PUBLIC = '__PUBLIC__';
 <!--feed-->
 <?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
 		<!--头像与用户名-->
-		<div class="userPic">
-		<a href="#"><img src="images/logo.jpg"></a>
+		<?php if(($sfeed["anonymous"]) == "0"): ?><div class="userPic">
+		<a href="#"><img src="../Public/images/logo.jpg"></a>
 		<span><a href="#"><?php echo ($sfeed["uname"]); ?></a>:</span>	
-		</div>
+		</div><?php endif; ?>
 		<!--/头像与用户名-->
 		<!--内容-->
 		<div class="msgCnt">
-		<p><?php echo ($sfeed["content"]); ?></p>		
+		<?php if(($sfeed["status"]) == "2"): ?><p class="title"><?php echo ($sfeed["title"]); ?></p>
+		<span class="cnt"><?php echo ($sfeed["floor"]); ?>F  </span><?php endif; ?><span >---<?php echo ($sfeed["status"]); ?>--<?php echo ($sfeed["content"]); ?>--<?php echo ($sfeed["title"]); ?>--<?php echo ($sfeed["title"]); ?></span>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
 			<span class="islike">
-			<img src="images/up.png"><?php echo ($sfeed["islike"]); ?></span>
+			<img src="../Public/images/up.png"><?php echo ($sfeed["islike"]); ?></span>
 			<span class="islike">
-			<img src="images/down.png"><?php echo ($sfeed["unlike"]); ?></span>
+			<img src="../Public/images/down.png"><?php echo ($sfeed["unlike"]); ?></span>
 			<!--/顶与踩-->
 			<span class="share">
 			<a href="#">评论(<?php echo ($sfeed["comment"]); ?>)</a>
