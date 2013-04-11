@@ -18,11 +18,5 @@ class UserAction extends Action{
 	}
 	
 	
-	public function rightbox(){		
-		$usercount = M('User_count');
-		$map['uid'] = $_SESSION['uid'];
-		$countlist = $usercount->where($map)->find();		
-		$this->assign('cdata',$countlist);
-		//$this->display('User:rightbox');			
-	}
+	
 }

@@ -1,7 +1,19 @@
 <include file="Public:header" />
 
+<div id="wrap">
+
+<include file="Public:test" />
+
+<!--banner 及 导航栏 -->
+<include file="Public:nav" />
+<!--/banner 及 导航栏 -->
+
+<!--内容栏-->
+<div id="contentbox">
+
+<!--/左侧栏-->
 <div class="content">
-<div class="title">写直播</div>
+<div class="title">写直播</div><br/>
 <table>
 <FORM method="post" action="__URL__/insertLstore">
 <tr>
@@ -15,19 +27,31 @@
 </td>
 </tr>
 
-<tr>
-	<td><input type="text" name="content" maxlength=100
-	value="请续写你的直播"></td>
+<tr class="bigtext">
+	<td></td>
+	<td><textarea type="text" name="content" maxlength=500>请续写你的直播</textarea></td>
 </tr>
 <input type="hidden" name='uid' value='{$Think.session.uid}'>
 <input type="hidden" name='status' value="2">
 <tr>
+	<td></td>
 	<td><input type="submit" value="发布"></td>
 </tr>
 
 </FORM>
 </table>
 </div>
+<!--/左侧栏-->
 
+</div>
+<!--内容栏-->
+
+
+</div>
 </body>
 </html>
+
+
+
+
+

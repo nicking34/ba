@@ -4,7 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>八吧</title>
 <link rel="stylesheet" type="text/css" href="../Public/themes/public.css">
+<link rel="stylesheet" type="text/css" href="../Public/themes/feed.css">
 <script src="../Public/js/jquery-1.7.js" type="text/javascript"></script>
+<script src="../Public/js/jquery.simplemodal-1.4.4.js" type="text/javascript"></script>
 <script src="../Public/js/nav.js" type="text/javascript"></script>
 <script language="JavaScript">
 <!--

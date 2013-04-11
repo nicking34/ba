@@ -4,11 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>八吧</title>
 <link rel="stylesheet" type="text/css" href="../Public/themes/public.css">
+<link rel="stylesheet" type="text/css" href="../Public/themes/feed.css">
 <script src="../Public/js/jquery-1.7.js" type="text/javascript"></script>
+<script src="../Public/js/jquery.simplemodal-1.4.4.js" type="text/javascript"></script>
 <script src="../Public/js/nav.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Public/themes/public.css" />
-<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/nav.js"></script>
 <script language="JavaScript">
 <!--
 var URL = '__URL__';
@@ -20,9 +19,68 @@ var PUBLIC = '__PUBLIC__';
 <body>
 	<?php echo (session('uname')); ?>
 	<?php echo (session('uid')); ?>
+	
 
+<div id="wrap">
+
+<div class="test"><?php echo ($test1); ?>test</div>
+
+<!--banner 及 导航栏 -->
+<!--banner-->
+<div class="banner">
+	<div class="banner_title"><h1>八吧</h1>
+	<span >分享身边的八卦趣事</span>
+	</div>
+</div>
+<!--/banner-->
+
+<!--顶部导航-->
+<div id="header">
+	<div id="nav">
+		<!--Logo
+		<div class="logo">
+		<img src="images/logo.jpg" alt="八吧"/>
+		</div>
+		Logo-->
+		<ul>
+			<li><a href="http://localhost/ba/index.php/Public/home#">首页</a></li>
+			<li><a href="#">热门</a></li>
+			<li><a href="#">好友</a></li>
+			<li><a href="#">审帖</a></li>
+			<li><a href="#">收藏</a></li>
+			<span>
+			<li class="wider"><a href="http://localhost/ba/index.php/Feed/addLstore">写直播</a>
+				<ul>
+				<li><a href="#">我的前任是极品</a></li>
+				<li><a href="#">八一八我的极品室友</a></li>
+				<li><a href="#">>>更多我的直播</a></li>
+				<li><a href="http://localhost/ba/index.php/Feed/addLfeed">+新建直播</a></li>
+				</ul>
+			</li>
+			<li><a href="http://localhost/ba/index.php/Feed/addSfeed">写短篇</a></li>
+			<li><a href="#">消息</a>
+				<ul>
+				<li><a href="#">查看评论</a></li>
+				<li><a href="#">查看粉丝</a></li>
+				<li><a href="#">查看私信</a></li>
+				<li><a href="#">查看通知</a></li>
+				<li><a href="#">提醒设置</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><?php echo (session('uname')); ?></a></li>
+			</span>
+		</ul>	
+	</div>
+</div>
+<!--/顶部导航-->
+<!--/banner 及 导航栏 -->
+
+<!--内容栏-->
+<div id="contentbox">
+
+<!--/左侧栏-->
 <div class="content">
-<div class="title">写直播</div>
+<div class="title">写直播</div><br/>
 <table>
 <FORM method="post" action="__URL__/insertLstore">
 <tr>
@@ -34,19 +92,26 @@ var PUBLIC = '__PUBLIC__';
 </td>
 </tr>
 
-<tr>
-	<td><input type="text" name="content" maxlength=100
-	value="请续写你的直播"></td>
+<tr class="bigtext">
+	<td></td>
+	<td><textarea type="text" name="content" maxlength=500>请续写你的直播</textarea></td>
 </tr>
 <input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
 <input type="hidden" name='status' value="2">
 <tr>
+	<td></td>
 	<td><input type="submit" value="发布"></td>
 </tr>
 
 </FORM>
 </table>
 </div>
+<!--/左侧栏-->
 
+</div>
+<!--内容栏-->
+
+
+</div>
 </body>
 </html>

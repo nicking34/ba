@@ -161,7 +161,9 @@ ul{
 .feed_line{
 	background-color:white;
 	margin:0px;
+	margin-bottom:15px;
 	padding:0px;
+	border-radius:7px;
 }
 
 .userPic{

@@ -1,13 +1,24 @@
 <include file="Public:header" />
 
+<div id="wrap">
 
+<include file="Public:test" />
+
+<!--banner 及 导航栏 -->
+<include file="Public:nav" />
+<!--/banner 及 导航栏 -->
+
+<!--内容栏-->
+<div id="contentbox">
+
+
+<!--/左侧栏-->
 <div class="content">
-<div class="title">新建直播</div>
+<div class="title">新建直播</div><br/>
 <table>
 <FORM method="post" action="__URL__/insertLfeed">
 <tr>
-	<td><input type="text" name="title" maxlength=100
-	value="请输入直播的标题"></td>
+	<td><textarea type="text" name="title" maxlength=100 >请输入直播的标题</textarea></td>
 </tr>
 <input type="hidden" name='uid' value='{$Think.session.uid}'>
 <tr>
@@ -19,3 +30,31 @@
 
 </body>
 </html>
+<!--/左侧栏-->
+
+</div>
+<!--内容栏-->
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

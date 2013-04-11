@@ -1,5 +1,5 @@
 <?php
-class PublicAction extends Action{
+class PublicAction extends CommonAction{
 	public function checkLogin(){
 		if(empty($_POST['uname'])) {
             $this->error('需要用户名');
@@ -20,26 +20,35 @@ class PublicAction extends Action{
 		$_SESSION['islogin'] = 1;		       
 	}
 	
-	public function home(){
-		/*
-		//显示USER_COUNT信息
-		$usercount = M('User_count');
-		$map['uid'] = $_SESSION['uid'];
-		$countlist = $usercount->where($map)->find();
-		$this->assign('cdata',$countlist);
-		
-		
+	public function home(){			
+		$this->feedlist();
+		$this->rightbox();
+		$this->test();		
+		$this->display();
+	}
+
+	/*
+	public function test(){
+		$this->assign('test1','1111111');
+		//$this->display();
+	}
+	*/
+	
+	public  function feedlist($uid){//信息流读取输出
 		//显示sfeed
 		$sfeed = M('Sfeed');
 		$user = M('User');
 		$lfeed = M('Lfeed');
 		$lstore = M('Lstore');
-
+		
+		if($uid == NULL){
 		$slist = $sfeed->limit(20)->order('ctime')->select();
+		}
+		
 		foreach($slist as $key => $map){
 			$data['uid'] = $map['uid'];
 			$slist[$key]['uname'] = $user->where($data)->getField('uname');
-			
+				
 			if($slist[$key]['status'] == 2){
 				$data1['sfeedid'] = $map['sfeedid'] ;
 				$lstore_data = $lstore->where($data1)->find();
@@ -49,14 +58,14 @@ class PublicAction extends Action{
 			}
 		}
 		$this->assign('slist',$slist);
-		*/
-		R('Feed/leftbox');
-		R('User/rightbox');
-		
-		$this->display();
+	}
+	
+	public function userlist($uid){
+		$sfeed = M('Sfeed');
+		$data['uid'] = $uid;
+		return $sfeed->where($data)->order('ctime')->select();
 	}
 
-	
 }
 
 

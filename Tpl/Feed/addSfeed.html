@@ -1,13 +1,24 @@
 <include file="Public:header" />
 
+<div id="wrap">
 
+<include file="Public:test" />
+
+<!--banner 及 导航栏 -->
+<include file="Public:nav" />
+<!--/banner 及 导航栏 -->
+
+<!--内容栏-->
+<div id="contentbox">
+
+<!--/左侧栏-->
 <div class="content">
 <div class="title">发布短篇</div>
 <table>
 <FORM method="post" action="__URL__/insertSfeed">
-<tr>
-	<td><input type="text" name="content" maxlength=500
-	value="八卦下身边的奇葩、奇事、奇闻……通过审核后将在最新栏目显示哦。"></td>
+<tr class="bigtext">
+	<td><textarea type="text" name="content" maxlength=500
+	>八卦下身边的奇葩、奇事、奇闻……通过审核后将在最新栏目显示哦。</textarea></td>
 </tr>
 <tr>
 	<td><input type="checkbox" name="anonymous" value=1>匿名</td>
@@ -20,5 +31,14 @@
 </table>
 </div>
 
+<!--/左侧栏-->
+
+</div>
+<!--内容栏-->
+
+
+</div>
 </body>
 </html>
+
+

@@ -1,5 +1,5 @@
 <?php 
-class FeedAction extends Action{
+class FeedAction extends CommonAction{
 	public  function insertSfeed(){
 		$Sfeed = D('Sfeed');
 		if($Sfeed->create()){
@@ -70,7 +70,7 @@ class FeedAction extends Action{
 		$this->display();
 	}
 	
-
+   /*
 	public function leftbox(){
 		//显示sfeed
 		$sfeed = M('Sfeed');
@@ -93,6 +93,6 @@ class FeedAction extends Action{
 		$this->assign('slist',$slist);
 		//$this->display();
 	}
-	
+  */
 }
 ?>

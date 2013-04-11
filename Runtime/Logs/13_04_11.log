@@ -1,0 +1,11 @@
+[ 2013-04-11T10:29:28+08:00 ] ERR: [4] syntax error, unexpected '$this' (T_VARIABLE) G:\program\ba\Lib\Action\PublicAction.class.php 第 57 行.
+[ 2013-04-11T10:29:47+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-11T10:29:47+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-11T10:29:47+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-11T10:36:01+08:00 ] ERR: [4] syntax error, unexpected '$this' (T_VARIABLE) G:\program\ba\Lib\Action\PublicAction.class.php 第 55 行.
+[ 2013-04-11T18:02:58+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-11T18:02:58+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-11T18:02:58+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-11T18:13:57+08:00 ] ERR: (ThinkException) 非法操作:Feed
+[ 2013-04-11T18:14:55+08:00 ] ERR: (ThinkException) 非法操作:Feed
+[ 2013-04-11T18:15:00+08:00 ] ERR: (ThinkException) 非法操作:Feed
