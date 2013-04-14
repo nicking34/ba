@@ -70,29 +70,74 @@ class FeedAction extends CommonAction{
 		$this->display();
 	}
 	
-   /*
-	public function leftbox(){
-		//显示sfeed
-		$sfeed = M('Sfeed');
-		$user = M('User');
-		$lfeed = M('Lfeed');
-		$lstore = M('Lstore');
-		$slist = $sfeed->limit(20)->order('ctime')->select();
-		foreach($slist as $key => $map){
-			$data['uid'] = $map['uid'];
-			$slist[$key]['uname'] = $user->where($data)->getField('uname');
-				
-			if($slist[$key]['status'] == 2){
-				$data1['sfeedid'] = $map['sfeedid'] ;
-				$lstore_data = $lstore->where($data1)->find();
-				$slist[$key]['floor'] = $lstore_data['floor'];
-				$data2['lfeedid'] = $lstore_data['lfeedid'];
-				$slist[$key]['title'] = $lfeed->where($data2)->getField('title');
+	
+	public function islike(){
+		$uid = $_POST['uid'];
+		$sfeedid = $_POST['sfeedid'];
+		$islike = $_POST['islike'];
+		$sfeedop = M('Sfeedop');
+		$data['uid'] = $uid;
+		$data['sfeedid'] = $sfeedid;
+		
+		$op = $sfeedop->where($data)->find();
+		if($op){
+			if($op['status']==0){
+				$data1['status'] = 1;
+				$sfeedop->where($data)->save($data1);
+				$data2['islike'] = $islike+1;
+			}else{
+				$data2['islike'] = '已顶过';
 			}
+		}else{
+			$data['status'] = 1 ;
+			$sfeedop->add($data);
+			$data2['islike'] = $islike+1;
 		}
-		$this->assign('slist',$slist);
-		//$this->display();
+
+		$this->ajaxReturn($data2['islike'],'JSON');
+		
 	}
-  */
+	
+	
 }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

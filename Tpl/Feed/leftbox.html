@@ -1,3 +1,29 @@
+
+<script type="text/javascript">
+$(function(){
+	$(".islike").click(function(){
+		var islike = $(this);
+		var sfeedid = parseInt($(this).find("input").filter('[name=sfeedid]').val());
+		var islikenum = parseInt($(this).find("input").filter('[name=islike]').val());
+		$.post("/ba/index.php/Feed/islike",{
+			uid:{$Think.session.uid},
+			sfeedid:sfeedid,
+			islike:islikenum,
+		}, function(data,textStatus){
+			var islikenum = data;
+			islike.find("img").css("background-color","rgb(243,92,120)");
+			islike.find("span").text(islikenum);		
+			},"json");
+	})
+})
+
+
+</script>
+
+
+
+
+
 <!--/左侧栏-->
 <div id="leftbox">
 <!--NewsFeed-->
@@ -17,10 +43,14 @@
 <!--feed-->
 <volist name='slist' id='sfeed'>
 	<li class="feed_line">
+		<!--隐藏数据传值-->
+		
+
+		<!--/隐藏数据传值-->
 		<!--头像与用户名-->
 		<eq name="sfeed.anonymous" value="0">
 		<div class="userPic">
-		<a href="#"><img src="../Public/images/logo.jpg"></a>
+		<a ><img src="../Public/images/logo.jpg"></a>
 		<span><a href="#">{$sfeed.uname}</a>:</span>	
 		</div>
 		</eq>
@@ -29,15 +59,17 @@
 		<div class="msgCnt">
 		<eq name="sfeed.status" value="2">
 		<p class="title">{$sfeed.title}</p>
-		<span class="cnt">{$sfeed.floor}F  </span></eq><span >---{$sfeed.status}--{$sfeed.content}--{$sfeed.title}--{$sfeed.title}</span>		
+		<span class="cnt">{$sfeed.floor}F  </span></eq><span >--sid:{$sfeed.sfeedid}--uid:{$sfeed.uid}---status:{$sfeed.status}--content:{$sfeed.content}--title:{$sfeed.title}</span>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
-			<span class="islike">
-			<img src="../Public/images/up.png">{$sfeed.islike}</span>
-			<span class="islike">
+			<a href="javascript:void(0)"  class="islike">
+			<input type="hidden" name="sfeedid"  value={$sfeed.sfeedid}>
+			<input type="hidden" name="islike" id="unlike" value={$sfeed.islike}>
+			<img src="../Public/images/up.png"><span>{$sfeed.islike}</span></a>
+			<span class="unlike">
 			<img src="../Public/images/down.png">{$sfeed.unlike}</span>
 			<!--/顶与踩-->
 			<span class="share">

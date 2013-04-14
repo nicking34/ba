@@ -198,16 +198,21 @@ ul{
 
 
 .msgCnt {
-	margin-top:7px;
+	margin-top:10px;
 	margin-left:15px;
 	margin-right:10px;
+	padding-top:4px;
+	padding-bottom:4px;
 	font-size:14px;
 }
 
 .title{
 	color:rgb(199,183,115);
-	font-size:15px;
+	font-size:10px;
 	font-weight:600;
+	margin-top:-3px;
+	margin-bottom:2px;
+	display:block;
 }
 
 .cnt{
@@ -216,7 +221,7 @@ ul{
 	font-weight:600
 }
 
-.islike{
+.islike,.unlike{
 	display:inline-block;
 	border:solid rgb(200,200,200) thin ;
 	margin-left:15px;
@@ -225,9 +230,12 @@ ul{
 	font-size:10px;
 }
 
-.islike img{
+.islike img,.unlike img{
 	filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.4;
+	
 }
+
+
 
 .share a{
 	margin:0,50px,0,5px;

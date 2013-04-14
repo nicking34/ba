@@ -1,0 +1,324 @@
+[ 2013-04-14T10:58:34+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-14T10:58:34+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-14T10:58:34+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-14T10:58:49+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+NOTIC: [8] Undefined index: sfeedid G:\program\ba\Lib\Action\FeedAction.class.php 第 76 行.
+NOTIC: [8] Undefined index: islike G:\program\ba\Lib\Action\FeedAction.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.060425s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000594s ]
+
+[ 2013-04-14T10:58:52+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [8] Undefined index: sfeedid G:\program\ba\Lib\Action\FeedAction.class.php 第 76 行.
+NOTIC: [8] Undefined index: islike G:\program\ba\Lib\Action\FeedAction.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007486s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000492s ]
+
+[ 2013-04-14T10:58:56+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+NOTIC: [8] Undefined index: sfeedid G:\program\ba\Lib\Action\FeedAction.class.php 第 76 行.
+NOTIC: [8] Undefined index: islike G:\program\ba\Lib\Action\FeedAction.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.008370s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000459s ]
+
+[ 2013-04-14T10:58:59+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [8] Undefined index: sfeedid G:\program\ba\Lib\Action\FeedAction.class.php 第 76 行.
+NOTIC: [8] Undefined index: islike G:\program\ba\Lib\Action\FeedAction.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.010007s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000823s ]
+
+[ 2013-04-14T19:52:38+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-14T19:52:38+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-14T19:52:38+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-14T21:25:05+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-14T21:25:05+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-14T21:25:06+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-14T21:43:29+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.079080s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000664s ]
+
+[ 2013-04-14T21:43:31+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007599s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000482s ]
+
+[ 2013-04-14T21:58:40+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+
+[ 2013-04-14T21:58:41+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002320s ]
+
+[ 2013-04-14T21:58:43+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002436s ]
+
+[ 2013-04-14T21:58:59+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+
+[ 2013-04-14T21:59:01+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002445s ]
+
+[ 2013-04-14T21:59:02+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+
+[ 2013-04-14T22:01:00+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+
+[ 2013-04-14T22:01:01+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+
+[ 2013-04-14T22:01:02+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002455s ]
+
+[ 2013-04-14T22:01:26+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002474s ]
+
+[ 2013-04-14T22:01:27+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+
+[ 2013-04-14T22:02:00+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+
+[ 2013-04-14T22:02:01+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002472s ]
+
+[ 2013-04-14T22:03:41+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+
+[ 2013-04-14T22:04:02+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002565s ]
+
+[ 2013-04-14T22:07:42+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+
+[ 2013-04-14T22:08:59+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003027s ]
+
+[ 2013-04-14T22:09:02+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002802s ]
+
+[ 2013-04-14T22:09:25+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002235s ]
+
+[ 2013-04-14T22:09:42+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002505s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.008143s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000563s ]
+
+[ 2013-04-14T22:09:45+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007547s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000518s ]
+
+[ 2013-04-14T22:09:47+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002871s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007304s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000469s ]
+
+[ 2013-04-14T22:12:20+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007263s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: INSERT INTO `sfeedop` (`uid`,`status`) VALUES (17,1) [ RunTime:0.083415s ]
+
+[ 2013-04-14T22:12:23+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002306s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007513s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000508s ]
+
+[ 2013-04-14T22:12:26+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002710s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.010206s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000519s ]
+
+[ 2013-04-14T22:13:50+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002430s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007040s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 7 ) LIMIT 1   [ RunTime:0.000470s ]
+SQL: INSERT INTO `sfeedop` (`uid`,`sfeedid`,`status`) VALUES (17,7,1) [ RunTime:0.000390s ]
+
+[ 2013-04-14T22:13:52+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002978s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007012s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 8 ) LIMIT 1   [ RunTime:0.000837s ]
+SQL: INSERT INTO `sfeedop` (`uid`,`sfeedid`,`status`) VALUES (17,8,1) [ RunTime:0.012935s ]
+
+[ 2013-04-14T22:13:55+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007798s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 9 ) LIMIT 1   [ RunTime:0.000775s ]
+SQL: INSERT INTO `sfeedop` (`uid`,`sfeedid`,`status`) VALUES (17,9,1) [ RunTime:0.000485s ]
+
+[ 2013-04-14T22:14:42+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007381s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 8 ) LIMIT 1   [ RunTime:0.000644s ]
+
+[ 2013-04-14T22:14:45+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007146s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 10 ) LIMIT 1   [ RunTime:0.000452s ]
+SQL: INSERT INTO `sfeedop` (`uid`,`sfeedid`,`status`) VALUES (17,10,1) [ RunTime:0.000592s ]
+
+[ 2013-04-14T22:14:48+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002538s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007010s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 9 ) LIMIT 1   [ RunTime:0.000494s ]
+
+[ 2013-04-14T22:14:53+08:00 ] 0.0.0.0 /ba/index.php/Feed/islike
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `sfeedop` [ RunTime:0.007617s ]
+SQL: SELECT * FROM `sfeedop` WHERE ( `uid` = 17 ) AND ( `sfeedid` = 7 ) LIMIT 1   [ RunTime:0.000567s ]
+

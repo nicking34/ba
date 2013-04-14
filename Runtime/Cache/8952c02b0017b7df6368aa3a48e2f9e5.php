@@ -43,21 +43,21 @@ var PUBLIC = '__PUBLIC__';
 		</div>
 		Logo-->
 		<ul>
-			<li><a href="http://localhost/ba/index.php/Public/home#">首页</a></li>
+			<li><a href="__APP__/Public/home#">首页</a></li>
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="#">审帖</a></li>
 			<li><a href="#">收藏</a></li>
 			<span>
-			<li class="wider"><a href="http://localhost/ba/index.php/Feed/addLstore">写直播</a>
+			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>
 				<li><a href="#">我的前任是极品</a></li>
 				<li><a href="#">八一八我的极品室友</a></li>
 				<li><a href="#">>>更多我的直播</a></li>
-				<li><a href="http://localhost/ba/index.php/Feed/addLfeed">+新建直播</a></li>
+				<li><a href="__APP__/Feed/addLfeed">+新建直播</a></li>
 				</ul>
 			</li>
-			<li><a href="http://localhost/ba/index.php/Feed/addSfeed">写短篇</a></li>
+			<li><a href="__APP__/Feed/addSfeed">写短篇</a></li>
 			<li><a href="#">消息</a>
 				<ul>
 				<li><a href="#">查看评论</a></li>
@@ -102,6 +102,32 @@ var PUBLIC = '__PUBLIC__';
 <!--/右侧栏-->
 
 <!--/左侧栏-->
+
+<script type="text/javascript">
+$(function(){
+	$(".islike").click(function(){
+		var islike = $(this);
+		var sfeedid = parseInt($(this).find("input").filter('[name=sfeedid]').val());
+		var islikenum = parseInt($(this).find("input").filter('[name=islike]').val());
+		$.post("/ba/index.php/Feed/islike",{
+			uid:<?php echo (session('uid')); ?>,
+			sfeedid:sfeedid,
+			islike:islikenum,
+		}, function(data,textStatus){
+			var islikenum = data;
+			islike.find("img").css("background-color","rgb(243,92,120)");
+			islike.find("span").text(islikenum);		
+			},"json");
+	})
+})
+
+
+</script>
+
+
+
+
+
 <!--/左侧栏-->
 <div id="leftbox">
 <!--NewsFeed-->
@@ -120,24 +146,30 @@ var PUBLIC = '__PUBLIC__';
 
 <!--feed-->
 <?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
+		<!--隐藏数据传值-->
+		
+
+		<!--/隐藏数据传值-->
 		<!--头像与用户名-->
 		<?php if(($sfeed["anonymous"]) == "0"): ?><div class="userPic">
-		<a href="#"><img src="../Public/images/logo.jpg"></a>
+		<a ><img src="../Public/images/logo.jpg"></a>
 		<span><a href="#"><?php echo ($sfeed["uname"]); ?></a>:</span>	
 		</div><?php endif; ?>
 		<!--/头像与用户名-->
 		<!--内容-->
 		<div class="msgCnt">
 		<?php if(($sfeed["status"]) == "2"): ?><p class="title"><?php echo ($sfeed["title"]); ?></p>
-		<span class="cnt"><?php echo ($sfeed["floor"]); ?>F  </span><?php endif; ?><span >---<?php echo ($sfeed["status"]); ?>--<?php echo ($sfeed["content"]); ?>--<?php echo ($sfeed["title"]); ?>--<?php echo ($sfeed["title"]); ?></span>		
+		<span class="cnt"><?php echo ($sfeed["floor"]); ?>F  </span><?php endif; ?><span >--sid:<?php echo ($sfeed["sfeedid"]); ?>--uid:<?php echo ($sfeed["uid"]); ?>---status:<?php echo ($sfeed["status"]); ?>--content:<?php echo ($sfeed["content"]); ?>--title:<?php echo ($sfeed["title"]); ?></span>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
-			<span class="islike">
-			<img src="../Public/images/up.png"><?php echo ($sfeed["islike"]); ?></span>
-			<span class="islike">
+			<a href="javascript:void(0)"  class="islike">
+			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
+			<input type="hidden" name="islike" id="unlike" value=<?php echo ($sfeed["islike"]); ?>>
+			<img src="../Public/images/up.png"><span><?php echo ($sfeed["islike"]); ?></span></a>
+			<span class="unlike">
 			<img src="../Public/images/down.png"><?php echo ($sfeed["unlike"]); ?></span>
 			<!--/顶与踩-->
 			<span class="share">

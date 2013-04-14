@@ -49,11 +49,13 @@ CREATE TABLE sfeed(
 	KEY ctime(ctime)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS sfeed_store;
+DROP TABLE IF EXISTS sfeedop;
 
-CREATE TABLE sfeed_store(
+CREATE TABLE sfeedop(
 	uid int(11) NOT NULL,
 	sfeedid int(11) NOT NULL,
+	store tinyint(1) NOT NULL DEFAULT 0,
+	status tinyint(1) NOT NULL DEFAULT 0,
 	PRIMARY KEY(uid,sfeedid)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -86,11 +88,13 @@ CREATE TABLE lfeed(
 	KEY ctime(ctime)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS lfeed_store;
+DROP TABLE IF EXISTS lfeedop;
 
-CREATE TABLE lfeed_store(
+CREATE TABLE lfeedop(
 	uid int(11) NOT NULL,
 	lfeedid int(11) NOT NULL,
+	store tinyint(1) NOT NULL DEFAULT 0,
+	status tinyint(1) NOT NULL DEFAULT 0,
 	PRIMARY KEY(uid,lfeedid)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
