@@ -237,12 +237,12 @@ ul{
 
 
 
-.share a{
+.share,.comment,.sub a{
 	margin:0,50px,0,5px;
 	font-size:12px;
 }
 
-.share{
+.share,.comment,.sub{
 	float:right;
 	margin-right:30px;
 	display:inline-block;

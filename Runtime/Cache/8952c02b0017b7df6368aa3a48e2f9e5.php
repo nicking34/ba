@@ -47,7 +47,7 @@ var PUBLIC = '__PUBLIC__';
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="#">审帖</a></li>
-			<li><a href="#">收藏</a></li>
+			<li><a href="#">收藏订阅</a></li>
 			<span>
 			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>
@@ -103,27 +103,70 @@ var PUBLIC = '__PUBLIC__';
 
 <!--/左侧栏-->
 
+
 <script type="text/javascript">
 $(function(){
 	$(".islike").click(function(){
 		var islike = $(this);
 		var sfeedid = parseInt($(this).find("input").filter('[name=sfeedid]').val());
 		var islikenum = parseInt($(this).find("input").filter('[name=islike]').val());
+		islike.css("border","solid rgb(243,92,120) thin");
 		$.post("/ba/index.php/Feed/islike",{
 			uid:<?php echo (session('uid')); ?>,
 			sfeedid:sfeedid,
 			islike:islikenum,
 		}, function(data,textStatus){
 			var islikenum = data;
-			islike.find("img").css("background-color","rgb(243,92,120)");
 			islike.find("span").text(islikenum);		
 			},"json");
-	})
+	});
+	
+	$(".unlike").click(function(){
+		var unlike = $(this);
+		var sfeedid = parseInt($(this).find("input").filter('[name=sfeedid]').val());
+		var unlikenum = parseInt($(this).find("input").filter('[name=unlike]').val());
+		unlike.css("border","solid rgb(243,92,120) thin");
+		$.post("/ba/index.php/Feed/unlike",{
+			uid:<?php echo (session('uid')); ?>,
+			sfeedid:sfeedid,
+			unlike:unlikenum,
+		}, function(data,textStatus){
+			var unlikenum = data;
+			unlike.find("span").text(unlikenum);		
+			},"json");
+	});
+	
+	$(".share").click(function(){
+		var store = $(this);
+		store.find("a").css("color","rgb(243,92,120)");
+		var sfeedid = parseInt($(this).find("input").filter('[name=sfeedid]').val());
+		var storenum = parseInt($(this).find("input").filter('[name=store]').val());
+		$.post("/ba/index.php/Feed/store",{
+			uid:<?php echo (session('uid')); ?>,
+			sfeedid:sfeedid,
+			storenum:storenum,
+		},function(data,textStatus){
+			store.find("span").text(data);	
+		},"json");
+	});
+	
+	$(".sub").click(function(){
+		var lstore = $(this);
+		lstore.find("a").css("color","rgb(243,92,120)");
+		var lfeedid = parseInt($(this).find("input").filter('[name=lfeedid]').val());
+		var lstorenum = parseInt($(this).find("input").filter('[name=lstore]').val());
+		$.post("/ba/index.php/Feed/sub",{
+			uid:<?php echo (session('uid')); ?>,
+			lfeedid:lfeedid,
+			lstorenum:lstorenum,
+		},function(data,textStatus){
+			lstore.find("span").text(data);	
+		},"json");
+	});
 })
 
 
 </script>
-
 
 
 
@@ -146,10 +189,6 @@ $(function(){
 
 <!--feed-->
 <?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
-		<!--隐藏数据传值-->
-		
-
-		<!--/隐藏数据传值-->
 		<!--头像与用户名-->
 		<?php if(($sfeed["anonymous"]) == "0"): ?><div class="userPic">
 		<a ><img src="../Public/images/logo.jpg"></a>
@@ -159,29 +198,43 @@ $(function(){
 		<!--内容-->
 		<div class="msgCnt">
 		<?php if(($sfeed["status"]) == "2"): ?><p class="title"><?php echo ($sfeed["title"]); ?></p>
-		<span class="cnt"><?php echo ($sfeed["floor"]); ?>F  </span><?php endif; ?><span >--sid:<?php echo ($sfeed["sfeedid"]); ?>--uid:<?php echo ($sfeed["uid"]); ?>---status:<?php echo ($sfeed["status"]); ?>--content:<?php echo ($sfeed["content"]); ?>--title:<?php echo ($sfeed["title"]); ?></span>		
+		<span class="cnt"><?php echo ($sfeed["floor"]); ?>F  </span><?php endif; ?><span >lid:<?php echo ($sfeed["lfeedid"]); ?>--lstorenum:<?php echo ($sfeed["lstorenum"]); ?>--sid:<?php echo ($sfeed["sfeedid"]); ?>--uid:<?php echo ($sfeed["uid"]); ?>---status:<?php echo ($sfeed["status"]); ?>--content:<?php echo ($sfeed["content"]); ?>--title:<?php echo ($sfeed["title"]); ?></span>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
-			<a href="javascript:void(0)"  class="islike">
+		    <a href="javascript:void(0)"  class="islike">
 			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
-			<input type="hidden" name="islike" id="unlike" value=<?php echo ($sfeed["islike"]); ?>>
+			<input type="hidden" name="islike"  value=<?php echo ($sfeed["islike"]); ?>>
 			<img src="../Public/images/up.png"><span><?php echo ($sfeed["islike"]); ?></span></a>
-			<span class="unlike">
-			<img src="../Public/images/down.png"><?php echo ($sfeed["unlike"]); ?></span>
+			
+			<a href="javascript:void(0)"  class="unlike">
+			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
+			<input type="hidden" name="unlike"  value=<?php echo ($sfeed["unlike"]); ?>>
+			<img src="../Public/images/down.png"><span><?php echo ($sfeed["unlike"]); ?></span></a>
+			
 			<!--/顶与踩-->
-			<span class="share">
+			<span class="comment">
 			<a href="#">评论(<?php echo ($sfeed["comment"]); ?>)</a>
 			</span>
+			
 			<span class="share">
-			<a href="#">收藏(<?php echo ($sfeed["store"]); ?>)</a>
-			</span>			
+			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
+			<input type="hidden" name="store"  value=<?php echo ($sfeed["store"]); ?>>
+			<a href="javascript:void(0)">收藏(<span><?php echo ($sfeed["store"]); ?></span>)</a>
+			</span>	
+			
+			<?php if(($sfeed["status"]) == "2"): ?><span class="sub">
+			<input type="hidden" name="lfeedid"  value=<?php echo ($sfeed["lfeedid"]); ?>>
+			<input type="hidden" name="lstore"  value=<?php echo ($sfeed["lstorenum"]); ?>>
+			<a href="javascript:void(0)">订阅直播(<span><?php echo ($sfeed["lstorenum"]); ?></span>)</a>
+			</span><?php endif; ?>
+					
 		</div>
 		<!--/操作-->
 		<!--评论-->
-		<div class="comment">
+		<div class="commentlist">
 		
 		</div>
 		<!--/评论-->

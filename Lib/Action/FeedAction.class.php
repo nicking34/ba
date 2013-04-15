@@ -76,8 +76,10 @@ class FeedAction extends CommonAction{
 		$sfeedid = $_POST['sfeedid'];
 		$islike = $_POST['islike'];
 		$sfeedop = M('Sfeedop');
+		$sfeed = M('Sfeed');
 		$data['uid'] = $uid;
 		$data['sfeedid'] = $sfeedid;
+		$data4['sfeedid'] = $sfeedid;
 		
 		$op = $sfeedop->where($data)->find();
 		if($op){
@@ -85,10 +87,12 @@ class FeedAction extends CommonAction{
 				$data1['status'] = 1;
 				$sfeedop->where($data)->save($data1);
 				$data2['islike'] = $islike+1;
+				$sfeed->where($data4)->setInc('islike');
 			}else{
-				$data2['islike'] = '已顶过';
+				$data2['islike'] = '已评价';
 			}
 		}else{
+			$sfeed->where($data4)->setInc('islike');
 			$data['status'] = 1 ;
 			$sfeedop->add($data);
 			$data2['islike'] = $islike+1;
@@ -98,6 +102,96 @@ class FeedAction extends CommonAction{
 		
 	}
 	
+	public function unlike(){
+		$uid = $_POST['uid'];
+		$sfeedid = $_POST['sfeedid'];
+		$unlike = $_POST['unlike'];
+		$sfeedop = M('Sfeedop');
+		$sfeed = M('Sfeed');
+		$data['uid'] = $uid;
+		$data['sfeedid'] = $sfeedid;
+		$data4['sfeedid'] = $sfeedid;
+		
+		$op = $sfeedop->where($data)->find();
+		if($op){
+			if($op['status']==0){
+				$data1['status'] = 2;
+				$sfeedop->where($data)->save($data1);
+				$data2['unlike'] = $unlike+1;		
+				$sfeed->where($data4)->setInc('unlike');
+			}else{
+				$data2['unlike'] = '已评价';
+			}
+		}else{
+			$sfeed->where($data4)->setInc('unlike');
+			$data['status'] = 2 ;
+			$sfeedop->add($data);
+			$data2['unlike'] = $unlike+1;
+		}
+	
+		$this->ajaxReturn($data2['unlike'],'JSON');
+	
+	}
+	
+	public function store(){
+		$uid = $_POST['uid'];
+		$sfeedid = $_POST['sfeedid'];
+		$storenum = $_POST['storenum'];
+		$sfeedop = M('Sfeedop');
+		$sfeed = M('Sfeed');
+		$data['uid'] = $uid;
+		$data['sfeedid'] = $sfeedid;
+		$data4['sfeedid'] = $sfeedid;
+		
+		$op = $sfeedop->where($data)->find();
+		if($op){
+			if($op['store']==0){
+				$data1['store'] = 1;
+				$sfeedop->where($data)->save($data1);
+				$data2['store'] = $storenum+1;
+				$sfeed->where($data4)->setInc('store');
+			}else{
+				$data2['store'] = "已收藏";
+			}
+		}else{
+			$sfeed->where($data4)->setInc('store');
+			$data['store'] = 1;
+			$sfeedop->add($data);
+			$data2['store'] = $storenum + 1 ;
+		}
+		
+		$this->ajaxReturn($data2['store'],'JSON');
+	}
+	
+	public function sub(){
+		$uid = $_POST['uid'];
+		$lfeedid = $_POST['lfeedid'];
+		$lstorenum = $_POST['lstorenum'];
+		$lfeedop = M('Lfeedop');
+		$lfeed = M('Lfeed');
+		$data['uid'] = $uid;
+		$data['lfeedid'] = $lfeedid;
+		$data4['lfeedid'] = $lfeedid;
+		
+		$op = $lfeedop->where($data)->find();
+		if($op){
+			if($op['store']==0){
+				$data1['store'] = 1;
+				$lfeedop->where($data)->save($data1);
+				$data2['store'] = $lstorenum+1;
+				$lfeed->where($data4)->setInc('store');
+			}else{
+				$data2['store'] = "已收藏";
+			}
+		}else{
+			$lfeed->where($data4)->setInc('store');
+			$data['store'] = 1;
+			$lfeedop->add($data);
+			$data2['store'] = $lstorenum + 1 ;
+		}
+		
+		$this->ajaxReturn($data2['store'],'JSON');
+	}
 	
 }
 ?>

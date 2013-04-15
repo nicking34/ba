@@ -54,7 +54,10 @@ class PublicAction extends CommonAction{
 				$lstore_data = $lstore->where($data1)->find();
 				$slist[$key]['floor'] = $lstore_data['floor'];
 				$data2['lfeedid'] = $lstore_data['lfeedid'];
-				$slist[$key]['title'] = $lfeed->where($data2)->getField('title');
+				$llist = $lfeed->where($data2)->find();
+				$slist[$key]['title'] = $llist['title'];
+				$slist[$key]['lfeedid'] = $lstore_data['lfeedid'];
+				$slist[$key]['lstorenum'] = $llist['store'] ;
 			}
 		}
 		$this->assign('slist',$slist);
