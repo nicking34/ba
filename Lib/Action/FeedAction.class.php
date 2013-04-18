@@ -181,7 +181,7 @@ class FeedAction extends CommonAction{
 				$data2['store'] = $lstorenum+1;
 				$lfeed->where($data4)->setInc('store');
 			}else{
-				$data2['store'] = "已收藏";
+				$data2['store'] = "已订阅";
 			}
 		}else{
 			$lfeed->where($data4)->setInc('store');
@@ -193,6 +193,29 @@ class FeedAction extends CommonAction{
 		$this->ajaxReturn($data2['store'],'JSON');
 	}
 	
+	public function comment(){
+		$sfeedid = $this->_param("sfeedid");
+		$this->assign('data',$sfeedid);
+		$this->display();
+	}
+	
+	public function insertComment(){
+		
+		$Comment = M('Comment');
+		$Sfeed = M('Sfeed');
+		$data['uid'] = $_POST['uid'];
+		$data['fid'] = $_POST['fid'];
+		$data['content'] = $_POST['content'];
+		$data['ctime'] = time();
+		$map['sfeedid'] = $_POST['fid'];
+		
+		$Sfeed->where($map)->setInc('comment');
+		$data['floor'] = $Sfeed->where($map)->getField('comment');
+		
+		$Comment->add($data);
+		$this->ajaxReturn($data,'JSON');
+		
+	}
 }
 ?>
 

@@ -47,17 +47,17 @@ var PUBLIC = '__PUBLIC__';
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="#">审帖</a></li>
-			<li><a href="#">收藏</a></li>
+			<li><a href="#">收藏订阅</a></li>
 			<span>
-			<li class="wider"><a href="__APP__//Feed/addLstore">写直播</a>
+			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>
 				<li><a href="#">我的前任是极品</a></li>
 				<li><a href="#">八一八我的极品室友</a></li>
 				<li><a href="#">>>更多我的直播</a></li>
-				<li><a href="http://localhost/ba/index.php/Feed/addLfeed">+新建直播</a></li>
+				<li><a href="__APP__/Feed/addLfeed">+新建直播</a></li>
 				</ul>
 			</li>
-			<li><a href="__APP__//Feed/addSfeed">写短篇</a></li>
+			<li><a href="__APP__/Feed/addSfeed">写短篇</a></li>
 			<li><a href="#">消息</a>
 				<ul>
 				<li><a href="#">查看评论</a></li>

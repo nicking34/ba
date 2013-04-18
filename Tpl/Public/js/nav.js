@@ -5,4 +5,5 @@ $(function(){
         },function(){
 		    $(this).children("ul").stop(true,true).delay(1000).slideUp(600);
 		});
+
 })

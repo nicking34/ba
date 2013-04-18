@@ -104,6 +104,7 @@ var PUBLIC = '__PUBLIC__';
 <!--/左侧栏-->
 
 
+
 <script type="text/javascript">
 $(function(){
 	$(".islike").click(function(){
@@ -163,13 +164,21 @@ $(function(){
 			lstore.find("span").text(data);	
 		},"json");
 	});
+	
+	$(".comment").click(function(){
+		var comment = $(this);
+		var sfeedid = $(this).find('a').attr('val');
+		var commentlist = $("#comment"+sfeedid);
+		$.post("/ba/index.php/Feed/comment",{
+			sfeedid:sfeedid
+		},function(data,textStatus){
+			commentlist.html(data);
+		});	
+	});
 })
-
-
+	
+	
 </script>
-
-
-
 
 <!--/左侧栏-->
 <div id="leftbox">
@@ -216,7 +225,8 @@ $(function(){
 			
 			<!--/顶与踩-->
 			<span class="comment">
-			<a href="#">评论(<?php echo ($sfeed["comment"]); ?>)</a>
+			<!--<a href="__APP__/Feed/comment/<?php echo ($sfeed["sfeedid"]); ?>/1/2">评论(<span><?php echo ($sfeed["comment"]); ?></span>)</a>  -->
+			<a href="javascript:void(0)" val="<?php echo ($sfeed["sfeedid"]); ?>">评论(<span><?php echo ($sfeed["comment"]); ?></span>)</a>
 			</span>
 			
 			<span class="share">
@@ -234,7 +244,7 @@ $(function(){
 		</div>
 		<!--/操作-->
 		<!--评论-->
-		<div class="commentlist">
+		<div id=comment<?php echo ($sfeed["sfeedid"]); ?> class = commentlist>
 		
 		</div>
 		<!--/评论-->
