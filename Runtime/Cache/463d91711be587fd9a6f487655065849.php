@@ -100,7 +100,7 @@ var PUBLIC = '__PUBLIC__';
 <input type="hidden" name='status' value="2">
 <tr>
 	<td></td>
-	<td><input type="submit" value="发布"></td>
+	<td><input type="submit" value="发布" class="Btn1"></td>
 </tr>
 
 </FORM>

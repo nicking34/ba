@@ -84,7 +84,7 @@ var PUBLIC = '__PUBLIC__';
 <table>
 <FORM method="post" action="__URL__/insertSfeed">
 <tr class="bigtext">
-	<td><textarea type="text" name="content" maxlength=500
+	<td><textarea name="content" maxlength=500
 	>八卦下身边的奇葩、奇事、奇闻……通过审核后将在最新栏目显示哦。</textarea></td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@ var PUBLIC = '__PUBLIC__';
 </tr>
 <input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
 <tr>
-	<td><input type="submit" value="发布"></td>
+	<td><input type="submit" value="发布" class="Btn"></td>
 </tr>
 </FORM>
 </table>

@@ -164,6 +164,7 @@ ul{
 	margin-bottom:15px;
 	padding:0px;
 	border-radius:7px;
+	box-shadow:0px 2px 5px #888888
 }
 
 .userPic{
@@ -196,6 +197,10 @@ ul{
 	display:inline;
 }
 
+.operate{
+	padding-top:10px;
+	padding-bottom:6px;
+}
 
 .msgCnt {
 	margin-top:10px;
@@ -255,6 +260,8 @@ ul{
 	width:250px;
 	background-color: white;
 	height:auto;
+	border-radius:7px;
+	box-shadow:0px 2px 5px #888888
 }
 
 .namecard {

@@ -47,7 +47,7 @@ var PUBLIC = '__PUBLIC__';
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="#">审帖</a></li>
-			<li><a href="#">收藏</a></li>
+			<li><a href="#">收藏订阅</a></li>
 			<span>
 			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>
@@ -89,7 +89,7 @@ var PUBLIC = '__PUBLIC__';
 </tr>
 <input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
 <tr>
-	<td><input type="submit" value="发布"></td>
+	<td><input type="submit" value="发布" class="Btn"></td>
 </tr>
 </FORM>
 </table>

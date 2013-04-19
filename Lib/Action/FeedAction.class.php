@@ -194,8 +194,20 @@ class FeedAction extends CommonAction{
 	}
 	
 	public function comment(){
-		$sfeedid = $this->_param("sfeedid");
-		$this->assign('data',$sfeedid);
+		$fid = $this->_param("sfeedid");
+		$comment = M('Comment');
+		$user = M('User');
+		$map['fid'] = $fid;
+		
+		
+		$list = $comment->where($map)->order('floor')->select();
+
+		foreach($list as $key => $map){
+			$data['uid'] = $map['uid'];
+			$list[$key]['uname'] = $user->where($data)->getField('uname');
+		}
+	
+		$this->assign('clist',$list);
 		$this->display();
 	}
 	
