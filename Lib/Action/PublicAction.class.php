@@ -22,7 +22,8 @@ class PublicAction extends CommonAction{
 	
 	public function home(){			
 		$this->feedlist();
-		$this->rightbox();
+		$uid = $_SESSION['uid'];
+		$this->rightbox($uid);
 		$this->test();		
 		$this->display();
 	}
@@ -34,34 +35,7 @@ class PublicAction extends CommonAction{
 	}
 	*/
 	
-	public  function feedlist($uid){//信息流读取输出
-		//显示sfeed
-		$sfeed = M('Sfeed');
-		$user = M('User');
-		$lfeed = M('Lfeed');
-		$lstore = M('Lstore');
-		
-		if($uid == NULL){
-		$slist = $sfeed->limit(20)->order('ctime')->select();
-		}
-		
-		foreach($slist as $key => $map){
-			$data['uid'] = $map['uid'];
-			$slist[$key]['uname'] = $user->where($data)->getField('uname');
-				
-			if($slist[$key]['status'] == 2){
-				$data1['sfeedid'] = $map['sfeedid'] ;
-				$lstore_data = $lstore->where($data1)->find();
-				$slist[$key]['floor'] = $lstore_data['floor'];
-				$data2['lfeedid'] = $lstore_data['lfeedid'];
-				$llist = $lfeed->where($data2)->find();
-				$slist[$key]['title'] = $llist['title'];
-				$slist[$key]['lfeedid'] = $lstore_data['lfeedid'];
-				$slist[$key]['lstorenum'] = $llist['store'] ;
-			}
-		}
-		$this->assign('slist',$slist);
-	}
+
 	
 	public function userlist($uid){
 		$sfeed = M('Sfeed');

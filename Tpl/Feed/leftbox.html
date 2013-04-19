@@ -68,8 +68,9 @@ $(function(){
 		$.post("/ba/index.php/Feed/comment",{
 			sfeedid:sfeedid
 		},function(data,textStatus){
-			commentlist.html(data);
+			commentlist.html(data);	
 		});	
+		commentlist.toggle(400);	
 	});
 })
 	
@@ -98,8 +99,8 @@ $(function(){
 		<!--头像与用户名-->
 		<eq name="sfeed.anonymous" value="0">
 		<div class="userPic">
-		<a ><img src="../Public/images/logo.jpg"></a>
-		<span><a href="#">{$sfeed.uname}</a>:</span>	
+		<a><img src="../Public/images/logo.jpg"></a>
+		<span><a href="__APP__/User/showUser/{$sfeed.uid}">{$sfeed.uname}</a>:</span>	
 		</div>
 		</eq>
 		<!--/头像与用户名-->
@@ -125,7 +126,6 @@ $(function(){
 			
 			<!--/顶与踩-->
 			<span class="comment">
-			<!--<a href="__APP__/Feed/comment/{$sfeed.sfeedid}/1/2">评论(<span>{$sfeed.comment}</span>)</a>  -->
 			<a href="javascript:void(0)" val="{$sfeed.sfeedid}">评论(<span>{$sfeed.comment}</span>)</a>
 			</span>
 			
@@ -146,7 +146,7 @@ $(function(){
 		</div>
 		<!--/操作-->
 		<!--评论-->
-		<div id=comment{$sfeed.sfeedid} class = commentlist>
+		<div id=comment{$sfeed.sfeedid} class = commentlist style="display:none">
 		
 		</div>
 		<!--/评论-->

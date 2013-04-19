@@ -1,5 +1,5 @@
 <?php
-class UserAction extends Action{
+class UserAction extends CommonAction{
 	public function insert(){
 		$User = D('User');
 		if($User->create()){
@@ -17,6 +17,13 @@ class UserAction extends Action{
 		$ucount->add($data);
 	}
 	
+	public function showUser(){
+		$uid = $this->_param(2);
+		$this->assign("uid",$uid);
+		$this->feedlist($uid);
+		$this->rightbox($uid);
+		$this->display();
+	}
 	
 	
 }

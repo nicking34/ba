@@ -20,7 +20,7 @@
 <!-- 评论列表 -->
 <div class="comment_list">
 <?php if(is_array($clist)): $i = 0; $__LIST__ = $clist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$re): $mod = ($i % 2 );++$i;?><div class="comment_box">
-<a href="javascript:void(0)" class="username"><?php echo ($re["uname"]); ?> : </a><p class="comment_content"><?php echo ($re["content"]); ?></p><span class="comment_floor"><?php echo ($re["floor"]); ?>楼</span>
+<a href="__APP__/User/showUser/<?php echo ($re["uid"]); ?>" class="username"><?php echo ($re["uname"]); ?> : </a><p class="comment_content"><?php echo ($re["content"]); ?></p><span class="comment_floor"><?php echo ($re["floor"]); ?>楼</span>
 </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 <!-- /评论列表 -->
