@@ -208,6 +208,7 @@ class FeedAction extends CommonAction{
 		}
 	
 		$this->assign('clist',$list);
+		$this->assign('fid',$fid);
 		$this->display();
 	}
 	
@@ -227,6 +228,30 @@ class FeedAction extends CommonAction{
 		$Comment->add($data);
 		$this->ajaxReturn($data,'JSON');
 		
+	}
+	
+	public function showlstore(){
+		$lfeedid = $this->_param(3);
+		$uid = $this->_param(4);
+		$this->assign("lfeedid",$lfeedid);
+		$this->assign("uid",$uid);
+		$this->lstorelist($uid,$lfeedid);
+		$this->rightbox($uid);
+		$this->display();
+	}
+	
+	public function showsop(){
+		$uid = $_SESSION['uid'];
+		$this->soplist($uid);
+		$this->rightbox($uid);
+		$this->display();
+	}
+	
+	public function showlop(){
+		$uid = $_SESSION['uid'];
+		$this->loplist($uid);
+		$this->rightbox($uid);
+		$this->display();
 	}
 }
 ?>

@@ -23,7 +23,7 @@ class CommonAction extends Action{
 		$lstore = M('Lstore');
 	
 		if($uid == NULL){
-			$slist = $sfeed->limit(20)->order('ctime')->select();
+			$slist = $sfeed->limit(20)->order('sfeedid')->select();
 		}else{
 			$data3['uid'] = $uid;
 			$slist = $sfeed->where($data3)->order('ctime')->select();
@@ -46,5 +46,103 @@ class CommonAction extends Action{
 		}
 		$this->assign('slist',$slist);
 	}
+	
+	public  function lstorelist($uid,$lfeedid){
+		//显示sfeed
+		$sfeed = M('Sfeed');
+		$user = M('User');
+		$lfeed = M('Lfeed');
+		$lstore = M('Lstore');
+		
+		$data['lfeedid'] = $lfeedid;
+		$list = $lstore->where($data)->order('floor')->select();
+		$ldata = $lfeed->where($data)->find();
+		
+		foreach ($list as $key => $map){		
+			$data1['sfeedid'] = $map['sfeedid'];
+			$slist = $sfeed->where($data1)->find();
+			
+			foreach ($slist as $skey => $smap){
+				$list[$key][$skey] = $smap;
+			}				
+		}
+		
+		
+		
+		$this->assign('slist',$list);
+		$this->assign('ldata',$ldata);
+	}
+	
+	public function soplist($uid){
+		//显示sfeed
+		$sfeed = M('Sfeed');
+		$user = M('User');
+		$sfeedop = M('Sfeedop');
+		
+		$data['uid'] = $uid;
+		$data['store'] = 1 ;
+		
+		$slist = $sfeedop->where($data)->select();
+
+		foreach ($slist as $key => $map){	
+			$data1['sfeedid'] = $map['sfeedid'];
+			$list = $sfeed->where($data1)->find();
+				
+			foreach ($list as $skey => $smap){
+				$slist[$key][$skey] = $smap;
+			}
+			
+			$data2['uid'] = $slist[$key]['uid'];
+			$slist[$key]['uname'] = $user->where($data2)->getField('uname');
+			
+		}
+	
+		$this->assign('slist',$slist);
+	}
+	
+	public function loplist($uid){
+		$lfeed = M('Lfeed');
+		$user = M('User');
+		$lfeedop = M('Lfeedop');
+		
+		$data['uid'] = $uid;
+		$data['store'] = 1 ;
+		
+		$slist = $lfeedop->where($data)->select();
+		
+		foreach ($slist as $key => $map){
+			$data1['lfeedid'] = $map['lfeedid'];
+			$list = $lfeed->where($data1)->find();
+			
+			foreach ($list as $skey => $smap){
+				$slist[$key][$skey] = $smap;
+			}
+			
+			$data2['uid'] = $slist[$key]['uid'];
+			$slist[$key]['uname'] = $user->where($data2)->getField('uname');
+						
+		}
+		
+		$this->assign('slist',$slist);
+	}
 }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

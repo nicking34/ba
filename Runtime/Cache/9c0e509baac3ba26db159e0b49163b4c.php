@@ -23,8 +23,6 @@ var PUBLIC = '__PUBLIC__';
 
 <div id="wrap">
 
-<div class="test"><?php echo ($test1); ?>test</div>
-
 <!--banner 及 导航栏 -->
 <!--banner-->
 <div class="banner">
@@ -47,7 +45,7 @@ var PUBLIC = '__PUBLIC__';
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
-			<li><a href="#">订阅</a></li>
+			<li><a href="__APP__/Feed/showlop">订阅</a></li>
 			<span>
 			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>
@@ -78,26 +76,71 @@ var PUBLIC = '__PUBLIC__';
 <!--内容栏-->
 <div id="contentbox">
 
-<!--/左侧栏-->
-<div class="content">
-<div class="title">发布短篇</div>
-<table>
-<FORM method="post" action="__URL__/insertSfeed">
-<tr class="bigtext">
-	<td><textarea name="content" maxlength=500
-	>八卦下身边的奇葩、奇事、奇闻……通过审核后将在最新栏目显示哦。</textarea></td>
-</tr>
-<tr>
-	<td><input type="checkbox" name="anonymous" value=1>匿名</td>
-</tr>
-<input type="hidden" name='uid' value='<?php echo (session('uid')); ?>'>
-<tr>
-	<td><input type="submit" value="发布" class="Btn1"></td>
-</tr>
-</FORM>
-</table>
+<!--右侧栏-->
+<!--右侧栏-->
+<div id="rightbox">
+	<div class="namecard">
+	<a href="#"><img src="../Public/images/logo.jpg"></a>
+	<span><?php echo ($cdata["uname"]); ?></span>
+	</div>
+	<div class="infbox">
+	<table border="0">
+	<tr>
+	<td><a href="#"><span >短篇</span><?php echo ($cdata["sfeed"]); ?></a></td>
+	<td><a href="#"><span >直播 </span><?php echo ($cdata["lfeed"]); ?></a></td>
+	</tr>
+	<tr>
+	<td><a href="#"><span >粉丝</span><?php echo ($cdata["fans"]); ?></a></td>
+	<td> <a href="#"><span >关注 </span><?php echo ($cdata["attention"]); ?></a></td>
+	</tr>
+	</table>
+	</div>
 </div>
+<!--/右侧栏-->
+<!--/右侧栏-->
 
+<!--/左侧栏-->
+<!--/左侧栏-->
+<div id="leftbox">
+<!--NewsFeed-->
+<div class="feedbox">
+	<!--评论列表-->
+	<ul class="feed_list">
+	<!--二级导航-->
+	<div id="secnav">
+		<ul>
+		<li><a href="#">全部</a></li>
+		<li><a href="#">短篇</a></li>
+		<li><a href="#">直播</a></li>
+		</ul>
+	</div>
+<!--/二级导航-->
+
+<!--feed-->
+<?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
+		<!--头像与用户名-->
+		<div class="userPic">
+		<a><img src="../Public/images/logo.jpg"></a>
+		<span><a href="__APP__/User/showUser/<?php echo ($sfeed["uid"]); ?>"><?php echo ($sfeed["uname"]); ?></a>:</span>	
+		</div>
+		<!--/头像与用户名-->
+		<!--内容-->
+		<div class="msgCnt">	
+		<a href = "__APP__/Feed/showlstore/<?php echo ($sfeed["lfeedid"]); ?>/<?php echo ($sfeed["uid"]); ?>" class="title"><?php echo ($sfeed["title"]); ?></a>
+		<span >已续写<?php echo ($sfeed["sfeednum"]); ?>篇 订阅数<?php echo ($sfeed["store"]); ?>个</span>		
+		</div>
+		<!--/内容-->
+		
+	</li><?php endforeach; endif; else: echo "" ;endif; ?>
+<!--/feed-->
+
+	</ul>
+	<!--/评论列表-->
+</div>
+<!--/NewsFeed-->
+
+</div>
+<!--/左侧栏-->
 <!--/左侧栏-->
 
 </div>

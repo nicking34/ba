@@ -1,4 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><p>uid:<?php echo ($uid); ?></p>
+<p>fid:<?php echo ($lfeedid); ?></p>
+
+
+<p>uid:<?php echo ($uid); ?></p>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -187,69 +193,65 @@ $(function(){
 <div class="feedbox">
 	<!--评论列表-->
 	<ul class="feed_list">
-	<!--二级导航-->
-	<div id="secnav">
-		<ul>
-		<li><a href="#">全部</a></li>
-		<li><a href="#">短篇</a></li>
-		<li><a href="#">直播</a></li>
-		</ul>
-	</div>
-<!--/二级导航-->
 
-<!--feed-->
-<?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
-		<!--头像与用户名-->
-		<?php if(($sfeed["anonymous"]) == "0"): ?><div class="userPic">
-		<a><img src="../Public/images/logo.jpg"></a>
-		<span><a href="__APP__/User/showUser/<?php echo ($sfeed["uid"]); ?>"><?php echo ($sfeed["uname"]); ?></a>:</span>	
-		</div><?php endif; ?>
-		<!--/头像与用户名-->
+<div class="lfeedbox">
+<p>直播标题 ： <?php echo ($ldata["title"]); ?></p><br/>
+<p>已续写<?php echo ($ldata["sfeednum"]); ?>篇     订阅数<?php echo ($ldata["store"]); ?>个 </p>
+</div>
+
+	<!--feed-->
+<?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><li class="feed_line">
 		<!--内容-->
 		<div class="msgCnt">
-		<?php if(($sfeed["status"]) == "2"): ?><a href = "__APP__/Feed/showlstore/<?php echo ($sfeed["lfeedid"]); ?>/<?php echo ($sfeed["uid"]); ?>" class="title"><?php echo ($sfeed["title"]); ?></a>
-		<span class="cnt"><?php echo ($sfeed["floor"]); ?>F  </span><?php endif; ?><span >lid:<?php echo ($sfeed["lfeedid"]); ?>--lstorenum:<?php echo ($sfeed["lstorenum"]); ?>--sid:<?php echo ($sfeed["sfeedid"]); ?>--uid:<?php echo ($sfeed["uid"]); ?>---status:<?php echo ($sfeed["status"]); ?>--content:<?php echo ($sfeed["content"]); ?>--title:<?php echo ($sfeed["title"]); ?></span>		
+		<span class="cnt"><?php echo ($list["floor"]); ?>F  </span><span >lid:<?php echo ($list["lfeedid"]); ?>--sid:<?php echo ($list["sfeedid"]); ?>--uid:<?php echo ($list["uid"]); ?>---status:<?php echo ($list["status"]); ?>--content:<?php echo ($list["content"]); ?>--title:<?php echo ($list["title"]); ?></span>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
 		    <a href="javascript:void(0)"  class="islike">
-			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
-			<input type="hidden" name="islike"  value=<?php echo ($sfeed["islike"]); ?>>
-			<img src="../Public/images/up.png"><span><?php echo ($sfeed["islike"]); ?></span></a>
+			<input type="hidden" name="sfeedid"  value=<?php echo ($list["sfeedid"]); ?>>
+			<input type="hidden" name="islike"  value=<?php echo ($list["islike"]); ?>>
+			<img src="../Public/images/up.png"><span><?php echo ($list["islike"]); ?></span></a>
 			
 			<a href="javascript:void(0)"  class="unlike">
-			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
-			<input type="hidden" name="unlike"  value=<?php echo ($sfeed["unlike"]); ?>>
-			<img src="../Public/images/down.png"><span><?php echo ($sfeed["unlike"]); ?></span></a>
+			<input type="hidden" name="sfeedid"  value=<?php echo ($list["sfeedid"]); ?>>
+			<input type="hidden" name="unlike"  value=<?php echo ($list["unlike"]); ?>>
+			<img src="../Public/images/down.png"><span><?php echo ($list["unlike"]); ?></span></a>
 			
 			<!--/顶与踩-->
 			<span class="comment">
-			<a href="javascript:void(0)" val="<?php echo ($sfeed["sfeedid"]); ?>">评论(<span><?php echo ($sfeed["comment"]); ?></span>)</a>
+			<a href="javascript:void(0)" val="<?php echo ($list["sfeedid"]); ?>">评论(<span><?php echo ($list["comment"]); ?></span>)</a>
 			</span>
 			
 			<span class="share">
-			<input type="hidden" name="sfeedid"  value=<?php echo ($sfeed["sfeedid"]); ?>>
-			<input type="hidden" name="store"  value=<?php echo ($sfeed["store"]); ?>>
-			<a href="javascript:void(0)">收藏(<span><?php echo ($sfeed["store"]); ?></span>)</a>
+			<input type="hidden" name="sfeedid"  value=<?php echo ($list["sfeedid"]); ?>>
+			<input type="hidden" name="store"  value=<?php echo ($list["store"]); ?>>
+			<a href="javascript:void(0)">收藏(<span><?php echo ($list["store"]); ?></span>)</a>
 			</span>	
 			
 			<?php if(($sfeed["status"]) == "2"): ?><span class="sub">
-			<input type="hidden" name="lfeedid"  value=<?php echo ($sfeed["lfeedid"]); ?>>
-			<input type="hidden" name="lstore"  value=<?php echo ($sfeed["lstorenum"]); ?>>
-			<a href="javascript:void(0)">订阅直播(<span><?php echo ($sfeed["lstorenum"]); ?></span>)</a>
+			<input type="hidden" name="lfeedid"  value=<?php echo ($list["lfeedid"]); ?>>
+			<input type="hidden" name="lstore"  value=<?php echo ($list["lstorenum"]); ?>>
+			<a href="javascript:void(0)">订阅直播(<span><?php echo ($list["lstorenum"]); ?></span>)</a>
 			</span><?php endif; ?>
 					
 		</div>
 		<!--/操作-->
 		<!--评论-->
-		<div id=comment<?php echo ($sfeed["sfeedid"]); ?> class = commentlist style="display:none">
+		<div id=comment<?php echo ($list["sfeedid"]); ?> class = commentlist style="display:none">
 		
 		</div>
 		<!--/评论-->
 	</li><?php endforeach; endif; else: echo "" ;endif; ?>
 <!--/feed-->
+
+
+
+
+
+
+
 
 	</ul>
 	<!--/评论列表-->
@@ -258,6 +260,7 @@ $(function(){
 
 </div>
 <!--/左侧栏-->
+
 <!--/左侧栏-->
 
 </div>

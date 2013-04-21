@@ -23,8 +23,6 @@ var PUBLIC = '__PUBLIC__';
 
 <div id="wrap">
 
-<div class="test"><?php echo ($test1); ?>test</div>
-
 <!--banner 及 导航栏 -->
 <!--banner-->
 <div class="banner">
@@ -47,7 +45,7 @@ var PUBLIC = '__PUBLIC__';
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
-			<li><a href="__APP__/Feed/showlop">订阅</a></li>
+			<li><a href="#">订阅</a></li>
 			<span>
 			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>

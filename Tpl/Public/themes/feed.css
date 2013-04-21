@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-.content {
+.content{
 	margin:auto;
 	background:white;
 	width:500px;
@@ -71,6 +71,7 @@
 	position: relative;
 	left:90%;
 }
+
 
 
 

@@ -1,16 +1,26 @@
 <script type="text/javascript">
 	$(function(){
-		$(".commentForm").click(function(){
+		$(".comment_list").submit(function(){
 			var form = $(this);
-			var fid = form.find("input").filter('[name=fid]').val();						
-			var content = form.find("textarea").val();		
+			var addc = $(.addComment);
+			var fid = form.find("input").filter('[name=fid]').val();	
+			var content = form.find("textarea").val();	
+			form.find("p").text(fid);
+			/*
 			$.post("/ba/index.php/Feed/insertComment",{
 				uid:{$Think.session.uid},
 				fid:fid,
 				content:content,
 			},function(data,textStatus){
+				/*
+				form.find(".comment_box").append(
+				"<a href="__APP__/User/showUser/{$re.uid}" class="username">{data.uid} : </a>
+				<p class="comment_content">{data.content}</p>
+				<span class="comment_floor">{data.floor}楼</span>");
+				
 				form.find("p").text(data.fid);
 			},"json")
+			*/
 		})
 	})
 
@@ -21,19 +31,20 @@
 <div class="comment_list">
 <volist name='clist' id='re'>
 <div class="comment_box">
-<a href="__APP__/User/showUser/{$re.uid}" class="username">{$re.uname} : </a><p class="comment_content">{$re.content}</p><span class="comment_floor">{$re.floor}楼</span>
+<a href="__APP__/User/showUser/{$re.uid}" class="username">{$re.uname} : </a>
+<p class="comment_content">{$re.content}--fid:{$fid}</p>
+<span class="comment_floor">{$re.floor}楼</span>
 </div>
+<p class="addComment"></p>
 </volist>
 
 <!-- /评论列表 -->
 
 <!-- 评论表单 -->
 <FORM  class="commentForm" action="javascript:void(0)">
-<input type="hidden" name='fid' value={$data}>
-<input type="hidden" name='uid' value='{$Think.session.uid}'>
+<input type="hidden" name='fid' value={$fid}>
 <textarea  name="content"></textarea>
 <input class="Btn" type="submit" value="评论">
-<p></p>
 </FORM>
 
 <!--/评论表单 -->

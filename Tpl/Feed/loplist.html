@@ -1,0 +1,44 @@
+<!--/左侧栏-->
+<div id="leftbox">
+<!--NewsFeed-->
+<div class="feedbox">
+	<!--评论列表-->
+	<ul class="feed_list">
+	<!--二级导航-->
+	<div id="secnav">
+		<ul>
+		<li><a href="#">全部</a></li>
+		<li><a href="#">短篇</a></li>
+		<li><a href="#">直播</a></li>
+		</ul>
+	</div>
+<!--/二级导航-->
+
+<!--feed-->
+<volist name='slist' id='sfeed'>
+	<li class="feed_line">
+		<!--头像与用户名-->
+		<div class="userPic">
+		<a><img src="../Public/images/logo.jpg"></a>
+		<span><a href="__APP__/User/showUser/{$sfeed.uid}">{$sfeed.uname}</a>:</span>	
+		</div>
+		<!--/头像与用户名-->
+		<!--内容-->
+		<div class="msgCnt">	
+		<a href = "__APP__/Feed/showlstore/{$sfeed.lfeedid}/{$sfeed.uid}" class="title">{$sfeed.title}</a>
+		<span >已续写{$sfeed.sfeednum}篇 订阅数{$sfeed.store}个</span>		
+		</div>
+		<!--/内容-->
+		
+	</li>
+	
+</volist>
+<!--/feed-->
+
+	</ul>
+	<!--/评论列表-->
+</div>
+<!--/NewsFeed-->
+
+</div>
+<!--/左侧栏-->

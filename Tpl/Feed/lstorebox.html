@@ -83,70 +83,56 @@ $(function(){
 <div class="feedbox">
 	<!--评论列表-->
 	<ul class="feed_list">
-	<!--二级导航-->
-	<div id="secnav">
-		<ul>
-		<li><a href="#">全部</a></li>
-		<li><a href="#">短篇</a></li>
-		<li><a href="#">直播</a></li>
-		</ul>
-	</div>
-<!--/二级导航-->
 
-<!--feed-->
-<volist name='slist' id='sfeed'>
+<div class="lfeedbox">
+<p>直播标题 ： {$ldata.title}</p><br/>
+<p>已续写{$ldata.sfeednum}篇     订阅数{$ldata.store}个 </p>
+</div>
+
+	<!--feed-->
+<volist name='slist' id='list'>
 	<li class="feed_line">
-		<!--头像与用户名-->
-		<eq name="sfeed.anonymous" value="0">
-		<div class="userPic">
-		<a><img src="../Public/images/logo.jpg"></a>
-		<span><a href="__APP__/User/showUser/{$sfeed.uid}">{$sfeed.uname}</a>:</span>	
-		</div>
-		</eq>
-		<!--/头像与用户名-->
 		<!--内容-->
 		<div class="msgCnt">
-		<eq name="sfeed.status" value="2">
-		<a href = "__APP__/Feed/showlstore/{$sfeed.lfeedid}/{$sfeed.uid}" class="title">{$sfeed.title}</a>
-		<span class="cnt">{$sfeed.floor}F  </span></eq><span >lid:{$sfeed.lfeedid}--lstorenum:{$sfeed.lstorenum}--sid:{$sfeed.sfeedid}--uid:{$sfeed.uid}---status:{$sfeed.status}--content:{$sfeed.content}--title:{$sfeed.title}</span>		
+		<span class="cnt">{$list.floor}F  </span><span >lid:{$list.lfeedid}--sid:{$list.sfeedid}--uid:{$list.uid}---status:{$list.status}--content:{$list.content}--title:{$list.title}</span>		
 		</div>
 		<!--/内容-->
 		<!--操作-->
 		<div class="operate">
 			<!--顶与踩-->
 		    <a href="javascript:void(0)"  class="islike">
-			<input type="hidden" name="sfeedid"  value={$sfeed.sfeedid}>
-			<input type="hidden" name="islike"  value={$sfeed.islike}>
-			<img src="../Public/images/up.png"><span>{$sfeed.islike}</span></a>
+			<input type="hidden" name="sfeedid"  value={$list.sfeedid}>
+			<input type="hidden" name="islike"  value={$list.islike}>
+			<img src="../Public/images/up.png"><span>{$list.islike}</span></a>
 			
 			<a href="javascript:void(0)"  class="unlike">
-			<input type="hidden" name="sfeedid"  value={$sfeed.sfeedid}>
-			<input type="hidden" name="unlike"  value={$sfeed.unlike}>
-			<img src="../Public/images/down.png"><span>{$sfeed.unlike}</span></a>
+			<input type="hidden" name="sfeedid"  value={$list.sfeedid}>
+			<input type="hidden" name="unlike"  value={$list.unlike}>
+			<img src="../Public/images/down.png"><span>{$list.unlike}</span></a>
 			
 			<!--/顶与踩-->
 			<span class="comment">
-			<a href="javascript:void(0)" val="{$sfeed.sfeedid}">评论(<span>{$sfeed.comment}</span>)</a>
+			<a href="javascript:void(0)" val="{$list.sfeedid}">评论(<span>{$list.comment}</span>)</a>
 			</span>
 			
 			<span class="share">
-			<input type="hidden" name="sfeedid"  value={$sfeed.sfeedid}>
-			<input type="hidden" name="store"  value={$sfeed.store}>
-			<a href="javascript:void(0)">收藏(<span>{$sfeed.store}</span>)</a>
+			<input type="hidden" name="sfeedid"  value={$list.sfeedid}>
+			<input type="hidden" name="store"  value={$list.store}>
+			<a href="javascript:void(0)">收藏(<span>{$list.store}</span>)</a>
 			</span>	
 			
 			<eq name="sfeed.status" value="2">
 			<span class="sub">
-			<input type="hidden" name="lfeedid"  value={$sfeed.lfeedid}>
-			<input type="hidden" name="lstore"  value={$sfeed.lstorenum}>
-			<a href="javascript:void(0)">订阅直播(<span>{$sfeed.lstorenum}</span>)</a>
+			<input type="hidden" name="lfeedid"  value={$list.lfeedid}>
+			<input type="hidden" name="lstore"  value={$list.lstorenum}>
+			<a href="javascript:void(0)">订阅直播(<span>{$list.lstorenum}</span>)</a>
 			</span>
 			</eq>
 					
 		</div>
 		<!--/操作-->
 		<!--评论-->
-		<div id=comment{$sfeed.sfeedid} class = commentlist style="display:none">
+		<div id=comment{$list.sfeedid} class = commentlist style="display:none">
 		
 		</div>
 		<!--/评论-->
@@ -154,6 +140,13 @@ $(function(){
 	
 </volist>
 <!--/feed-->
+
+
+
+
+
+
+
 
 	</ul>
 	<!--/评论列表-->
