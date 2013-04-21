@@ -25,5 +25,33 @@ class UserAction extends CommonAction{
 		$this->display();
 	}
 	
+	public function addfriend(){
+		$uid = $_POST['uid'];
+		$myid = $_SESSION['uid'];
+		$data['uid'] = $uid;
+		$data['fansid'] = $myid;
+		
+		$friend = M('Friend');
+		$friend->add($data);
+		
+		$cnt = "<p>已关注</p>";
+		$this->ajaxReturn($cnt,'JSON');
+	}
+	
+	public function delfriend(){
+		$uid = $_POST['uid'];
+		$myid = $_SESSION['uid'];
+		$data['uid'] = $uid;
+		$data['fansid'] = $myid;
+		
+		$friend = M('Friend');
+		$friend->where($data)->delete();
+		
+		$cnt = "已取消关注";
+		$this->ajaxReturn($cnt,'JSON');
+	}
+	
+	
+	
 	
 }

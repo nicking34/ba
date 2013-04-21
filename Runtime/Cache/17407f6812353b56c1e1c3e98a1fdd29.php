@@ -45,7 +45,7 @@ var PUBLIC = '__PUBLIC__';
 			<li><a href="#">热门</a></li>
 			<li><a href="#">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
-			<li><a href="#">订阅</a></li>
+			<li><a href="__APP__/Feed/showlop">订阅</a></li>
 			<span>
 			<li class="wider"><a href="__APP__/Feed/addLstore">写直播</a>
 				<ul>
@@ -185,15 +185,6 @@ $(function(){
 <div class="feedbox">
 	<!--评论列表-->
 	<ul class="feed_list">
-	<!--二级导航-->
-	<div id="secnav">
-		<ul>
-		<li><a href="#">全部</a></li>
-		<li><a href="#">短篇</a></li>
-		<li><a href="#">直播</a></li>
-		</ul>
-	</div>
-<!--/二级导航-->
 
 <!--feed-->
 <?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">

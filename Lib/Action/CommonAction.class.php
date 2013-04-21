@@ -8,11 +8,29 @@ class CommonAction extends Action{
 	public function rightbox($uid){
 		$usercount = M('User_count');
 		$user = M('User');
+		$friend = M('Friend');
+		
 		$map['uid'] = $uid;
 		$countlist = $usercount->where($map)->find();
 		$countlist['uname'] = $user->where($map)->getField('uname');
+		
+		
+		$myid = $_SESSION['uid'];
+		$map['fansid'] = $myid;
+		
+		if ($map['uid'] == $map['fansid']){
+			$isfriend = 0 ;//用户看到自己的名片，不显示关注按钮
+		}else{
+			$result = $friend->where($map)->find();
+			if($result){
+				$isfriend = 1;//两人已经是好友关系
+			}else{
+				$isfriend = 2;//未关注
+			}
+		}
+		$countlist['isfriend'] = $isfriend;
+		
 		$this->assign('cdata',$countlist);
-		//$this->display('User:rightbox');
 	}
 	
 	public  function feedlist($uid){//信息流读取输出

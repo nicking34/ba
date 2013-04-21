@@ -67,7 +67,7 @@ var PUBLIC = '__PUBLIC__';
 				<li><a href="#">提醒设置</a></li>
 				</ul>
 			</li>
-			<li><a href="#"><?php echo (session('uname')); ?></a></li>
+			<li><a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><?php echo (session('uname')); ?></a></li>
 			</span>
 		</ul>	
 	</div>
@@ -79,11 +79,36 @@ var PUBLIC = '__PUBLIC__';
 <div id="contentbox">
 
 <!--右侧栏-->
+<script type="text/javascript">
+$(function(){
+	$(".addfriend").click(function(){
+		var add = $(this);
+		$.post("/ba/index.php/User/addfriend",{
+			uid:add.attr('uid')
+		},function(data,textStatus){		
+			add.html("<p>已关注</p>");
+		},"json")		
+	});
+	
+	$(".delfriend").click(function(){
+		var del = $(this);
+		$.post("/ba/index.php/User/delfriend",{
+			uid:del.attr('uid')
+		},function(data,textStatus){		
+			del.html("<p>已取消关注</p>");
+		},"json")		
+	});
+})
+
+</script>
+
+
+
 <!--右侧栏-->
 <div id="rightbox">
 	<div class="namecard">
-	<a href="#"><img src="../Public/images/logo.jpg"></a>
-	<span><?php echo ($cdata["uname"]); ?></span>
+	<a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><img src="../Public/images/logo.jpg"></a>
+	<a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><?php echo ($cdata["uname"]); ?></a>
 	</div>
 	<div class="infbox">
 	<table border="0">
@@ -95,8 +120,15 @@ var PUBLIC = '__PUBLIC__';
 	<td><a href="#"><span >粉丝</span><?php echo ($cdata["fans"]); ?></a></td>
 	<td> <a href="#"><span >关注 </span><?php echo ($cdata["attention"]); ?></a></td>
 	</tr>
+	<tr>
+	<?php switch($cdata["isfriend"]): case "1": ?><td><p>已关注</p><a href="javascript:void(0)" class="delfriend" uid=<?php echo ($cdata["uid"]); ?>>取消关注</a></td><?php break;?>
+	<?php case "2": ?><td><a href="javascript:void(0)" class="addfriend" uid=<?php echo ($cdata["uid"]); ?>>关注此人+</a></td><?php break;?>
+	<?php default: endswitch;?>
+	</tr>
 	</table>
+	
 	</div>
+	
 </div>
 <!--/右侧栏-->
 <!--/右侧栏-->
@@ -187,15 +219,6 @@ $(function(){
 <div class="feedbox">
 	<!--评论列表-->
 	<ul class="feed_list">
-	<!--二级导航-->
-	<div id="secnav">
-		<ul>
-		<li><a href="#">全部</a></li>
-		<li><a href="#">短篇</a></li>
-		<li><a href="#">直播</a></li>
-		</ul>
-	</div>
-<!--/二级导航-->
 
 <!--feed-->
 <?php if(is_array($slist)): $i = 0; $__LIST__ = $slist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sfeed): $mod = ($i % 2 );++$i;?><li class="feed_line">
