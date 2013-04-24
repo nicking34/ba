@@ -51,7 +51,7 @@ var PUBLIC = '__PUBLIC__';
 		<ul>
 			<li><a href="__APP__/Public/home#">首页</a></li>
 			<li><a href="#">热门</a></li>
-			<li><a href="#">好友</a></li>
+			<li><a href="__APP__/Feed/showfriends">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
 			<li><a href="__APP__/Feed/showlop">订阅</a></li>
 			<span>
@@ -73,7 +73,7 @@ var PUBLIC = '__PUBLIC__';
 				<li><a href="#">提醒设置</a></li>
 				</ul>
 			</li>
-			<li><a href="#"><?php echo (session('uname')); ?></a></li>
+			<li><a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><?php echo (session('uname')); ?></a></li>
 			</span>
 		</ul>	
 	</div>
@@ -85,11 +85,37 @@ var PUBLIC = '__PUBLIC__';
 <div id="contentbox">
 
 <!--右侧栏-->
+<script type="text/javascript">
+$(function(){
+	$(".addfriend").click(function(){
+		var add = $(this).find('a');
+		$.post("/ba/index.php/User/addfriend",{
+			uid:add.attr('uid')
+		},function(data,textStatus){		
+			$(this).html("<p>已关注</p>");
+		},"json")		
+	});
+	
+	$(".delfriend").click(function(){
+		var del = $(this).find('a');
+		$.post("/ba/index.php/User/delfriend",{
+			uid:del.attr('uid')
+		},function(data,textStatus){		
+			$del.text(data);
+		},"json")		
+	});
+})
+
+</script>
+
+
+
 <!--右侧栏-->
 <div id="rightbox">
 	<div class="namecard">
-	<a href="#"><img src="../Public/images/logo.jpg"></a>
-	<span><?php echo ($cdata["uname"]); ?></span>
+	<a ><img src="../Public/images/logo.jpg"></a>
+	
+	<a href="javascript:void(0)"><?php echo ($cdata["uname"]); ?></a>
 	</div>
 	<div class="infbox">
 	<table border="0">
@@ -101,8 +127,15 @@ var PUBLIC = '__PUBLIC__';
 	<td><a href="#"><span >粉丝</span><?php echo ($cdata["fans"]); ?></a></td>
 	<td> <a href="#"><span >关注 </span><?php echo ($cdata["attention"]); ?></a></td>
 	</tr>
+	<tr>
+	<?php switch($cdata["isfriend"]): case "1": ?><td class="delfriend"><p>已关注</p><a href="javascript:void(0)" uid=<?php echo ($cdata["uid"]); ?>>取消关注</a></td><?php break;?>
+	<?php case "2": ?><td class="addfriend" ><a href="javascript:void(0)" uid=<?php echo ($cdata["uid"]); ?>>关注此人+</a></td><?php break;?>
+	<?php default: endswitch;?>
+	</tr>
 	</table>
+	
 	</div>
+	
 </div>
 <!--/右侧栏-->
 <!--/右侧栏-->

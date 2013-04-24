@@ -1,0 +1,200 @@
+[ 2013-04-24T22:17:20+08:00 ] ERR: (ThinkException) 非法操作:themes
+[ 2013-04-24T22:17:20+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-24T22:17:20+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2013-04-24T23:25:28+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.177591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.177729s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.731410s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.110885s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 12 ) ORDER BY floor  [ RunTime:0.464435s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\program\ba\Lib\Action\FeedAction.class.php 第 205 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.422847s ]
+INFO: [ view_template ] --END-- [ RunTime:0.422977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:1.302837s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.302947s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.036305s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.066441s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.042000s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.020937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.165992s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.054193s ]
+INFO: [ view_end ] --END-- [ RunTime:0.054283s ]
+
+[ 2013-04-24T23:25:33+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.007797s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007390s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 12 ) ORDER BY floor  [ RunTime:0.000534s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\program\ba\Lib\Action\FeedAction.class.php 第 205 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002351s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002453s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.019240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019325s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001535s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001447s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001254s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006175s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002452s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002547s ]
+
+[ 2013-04-24T23:25:34+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.010193s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010831s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 12 ) ORDER BY floor  [ RunTime:0.000799s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\program\ba\Lib\Action\FeedAction.class.php 第 205 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.003342s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003464s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.029135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029241s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001788s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002066s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001647s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007689s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002178s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002281s ]
+
+[ 2013-04-24T23:25:36+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002018s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.009645s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009152s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 12 ) ORDER BY floor  [ RunTime:0.000659s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\program\ba\Lib\Action\FeedAction.class.php 第 205 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002655s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002766s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025267s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002445s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001652s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001426s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007756s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002198s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002313s ]
+
+[ 2013-04-24T23:25:37+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002572s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.010450s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009889s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 12 ) ORDER BY floor  [ RunTime:0.000566s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\program\ba\Lib\Action\FeedAction.class.php 第 205 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002887s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.026774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026878s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001926s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001807s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001750s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007782s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002250s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002347s ]
+
+[ 2013-04-24T23:26:34+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004168s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.009576s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009115s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 7 ) ORDER BY floor  [ RunTime:0.000907s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000447s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000472s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000357s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002933s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003051s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.024758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024864s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002085s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002164s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.002037s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008717s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002513s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002614s ]
+
+[ 2013-04-24T23:26:41+08:00 ] 0.0.0.0 /ba/index.php/Feed/comment
+NOTIC: [2] ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+NOTIC: [8] ob_start(): failed to create buffer G:\program\thinkphp\Lib\Core\App.class.php 第 49 行.
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002725s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.009456s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009095s ]
+SQL: SELECT * FROM `comment` WHERE ( `fid` = 7 ) ORDER BY floor  [ RunTime:0.000822s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000484s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT `uname` FROM `user` WHERE ( `uid` = 17 ) LIMIT 1   [ RunTime:0.000479s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002890s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002999s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: re G:\program\ba\Runtime\Cache\7a9a55aff6f47e257060ca0ab28ec843.php 第 17 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025415s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001992s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002031s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001752s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008113s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002397s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002501s ]
+

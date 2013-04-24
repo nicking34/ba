@@ -2,7 +2,6 @@
 class CommonAction extends Action{
 	public function test(){
 		$this->assign('test1','1111111');
-		//$this->display();
 	}
 	
 	public function rightbox($uid){
@@ -143,24 +142,49 @@ class CommonAction extends Action{
 		
 		$this->assign('slist',$slist);
 	}
+	
+	public function friendlist($uid){
+		//显示sfeed
+		$sfeed = M('Sfeed');
+		$user = M('User');
+		$lfeed = M('Lfeed');
+		$lstore = M('Lstore');
+		$friend = M('Friend');
+		
+		$data4['fansid'] = $uid;
+		$friendlist = $friend->where($data4)->select();
+
+		$i = 0;
+		foreach ($friendlist as $key => $map){
+			$data3['uid'] = $map['uid'];
+			$flist = $sfeed->where($data3)->select();
+			foreach ($flist as $fkey => $fmap){
+				foreach ($fmap as $skey => $smap){
+					$slist[$i][$skey] = $smap;
+				}
+				$i++;
+			}	
+		}
+		
+		foreach($slist as $key => $map){
+			$data['uid'] = $map['uid'];
+			$slist[$key]['uname'] = $user->where($data)->getField('uname');
+		
+			if($slist[$key]['status'] == 2){
+				$data1['sfeedid'] = $map['sfeedid'] ;
+				$lstore_data = $lstore->where($data1)->find();
+				$slist[$key]['floor'] = $lstore_data['floor'];
+				$data2['lfeedid'] = $lstore_data['lfeedid'];
+				$llist = $lfeed->where($data2)->find();
+				$slist[$key]['title'] = $llist['title'];
+				$slist[$key]['lfeedid'] = $lstore_data['lfeedid'];
+				$slist[$key]['lstorenum'] = $llist['store'] ;
+			}
+		}
+		$this->assign('slist',$slist);
+	}
 }
+
+
+
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -48,7 +48,7 @@ var PUBLIC = '__PUBLIC__';
 		<ul>
 			<li><a href="__APP__/Public/home#">首页</a></li>
 			<li><a href="#">热门</a></li>
-			<li><a href="#">好友</a></li>
+			<li><a href="__APP__/Feed/showfriends">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
 			<li><a href="__APP__/Feed/showlop">订阅</a></li>
 			<span>
@@ -110,8 +110,9 @@ $(function(){
 <!--右侧栏-->
 <div id="rightbox">
 	<div class="namecard">
-	<a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><img src="../Public/images/logo.jpg"></a>
-	<a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><?php echo ($cdata["uname"]); ?></a>
+	<a ><img src="../Public/images/logo.jpg"></a>
+	
+	<a href="javascript:void(0)"><?php echo ($cdata["uname"]); ?></a>
 	</div>
 	<div class="infbox">
 	<table border="0">

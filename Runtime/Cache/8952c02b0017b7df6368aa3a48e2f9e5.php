@@ -45,7 +45,7 @@ var PUBLIC = '__PUBLIC__';
 		<ul>
 			<li><a href="__APP__/Public/home#">首页</a></li>
 			<li><a href="#">热门</a></li>
-			<li><a href="#">好友</a></li>
+			<li><a href="__APP__/Feed/showfriends">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
 			<li><a href="__APP__/Feed/showlop">订阅</a></li>
 			<span>
@@ -82,20 +82,20 @@ var PUBLIC = '__PUBLIC__';
 <script type="text/javascript">
 $(function(){
 	$(".addfriend").click(function(){
-		var add = $(this);
+		var add = $(this).find('a');
 		$.post("/ba/index.php/User/addfriend",{
 			uid:add.attr('uid')
 		},function(data,textStatus){		
-			add.html("<p>已关注</p>");
+			$(this).html("<p>已关注</p>");
 		},"json")		
 	});
 	
 	$(".delfriend").click(function(){
-		var del = $(this);
+		var del = $(this).find('a');
 		$.post("/ba/index.php/User/delfriend",{
 			uid:del.attr('uid')
 		},function(data,textStatus){		
-			del.html("<p>已取消关注</p>");
+			$del.text(data);
 		},"json")		
 	});
 })
@@ -107,8 +107,9 @@ $(function(){
 <!--右侧栏-->
 <div id="rightbox">
 	<div class="namecard">
-	<a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><img src="../Public/images/logo.jpg"></a>
-	<a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><?php echo ($cdata["uname"]); ?></a>
+	<a ><img src="../Public/images/logo.jpg"></a>
+	
+	<a href="javascript:void(0)"><?php echo ($cdata["uname"]); ?></a>
 	</div>
 	<div class="infbox">
 	<table border="0">
@@ -121,8 +122,8 @@ $(function(){
 	<td> <a href="#"><span >关注 </span><?php echo ($cdata["attention"]); ?></a></td>
 	</tr>
 	<tr>
-	<?php switch($cdata["isfriend"]): case "1": ?><td><p>已关注</p><a href="javascript:void(0)" class="delfriend" uid=<?php echo ($cdata["uid"]); ?>>取消关注</a></td><?php break;?>
-	<?php case "2": ?><td><a href="javascript:void(0)" class="addfriend" uid=<?php echo ($cdata["uid"]); ?>>关注此人+</a></td><?php break;?>
+	<?php switch($cdata["isfriend"]): case "1": ?><td class="delfriend"><p>已关注</p><a href="javascript:void(0)" uid=<?php echo ($cdata["uid"]); ?>>取消关注</a></td><?php break;?>
+	<?php case "2": ?><td class="addfriend" ><a href="javascript:void(0)" uid=<?php echo ($cdata["uid"]); ?>>关注此人+</a></td><?php break;?>
 	<?php default: endswitch;?>
 	</tr>
 	</table>

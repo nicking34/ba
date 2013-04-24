@@ -45,7 +45,7 @@ var PUBLIC = '__PUBLIC__';
 		<ul>
 			<li><a href="__APP__/Public/home#">首页</a></li>
 			<li><a href="#">热门</a></li>
-			<li><a href="#">好友</a></li>
+			<li><a href="__APP__/Feed/showfriends">好友</a></li>
 			<li><a href="__APP__/Feed/showsop">收藏</a></li>
 			<li><a href="__APP__/Feed/showlop">订阅</a></li>
 			<span>
@@ -67,7 +67,7 @@ var PUBLIC = '__PUBLIC__';
 				<li><a href="#">提醒设置</a></li>
 				</ul>
 			</li>
-			<li><a href="#"><?php echo (session('uname')); ?></a></li>
+			<li><a href="__APP__/User/showUser/<?php echo (session('uid')); ?>"><?php echo (session('uname')); ?></a></li>
 			</span>
 		</ul>	
 	</div>

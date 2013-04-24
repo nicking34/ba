@@ -253,6 +253,13 @@ class FeedAction extends CommonAction{
 		$this->rightbox($uid);
 		$this->display();
 	}
+	
+	public function showfriends(){
+		$uid = $_SESSION['uid'];
+		$this->friendlist($uid);
+		$this->rightbox($uid);
+		$this->display();
+	}
 }
 ?>
 
