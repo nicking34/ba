@@ -216,7 +216,7 @@ class FeedAction extends CommonAction{
 		
 		$Comment = M('Comment');
 		$Sfeed = M('Sfeed');
-		$data['uid'] = $_POST['uid'];
+		$data['uid'] = $_SESSION['uid'];
 		$data['fid'] = $_POST['fid'];
 		$data['content'] = $_POST['content'];
 		$data['ctime'] = time();

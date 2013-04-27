@@ -89,16 +89,18 @@ $(function(){
 		$.post("/ba/index.php/User/addfriend",{
 			uid:add.attr('uid')
 		},function(data,textStatus){		
-			$(this).html("<p>已关注</p>");
+			add.replaceWith(data);
 		},"json")		
 	});
 	
 	$(".delfriend").click(function(){
 		var del = $(this).find('a');
+		var delp = $(this).find('p');
 		$.post("/ba/index.php/User/delfriend",{
 			uid:del.attr('uid')
 		},function(data,textStatus){		
-			$del.text(data);
+			del.replaceWith(data);
+			delp.replaceWith("<p></p>")
 		},"json")		
 	});
 })

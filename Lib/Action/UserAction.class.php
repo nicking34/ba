@@ -47,7 +47,7 @@ class UserAction extends CommonAction{
 		$friend = M('Friend');
 		$friend->where($data)->delete();
 		
-		$cnt = "已取消关注";
+		$cnt = "<p>已取消关注</p>";
 		$this->ajaxReturn($cnt,'JSON');
 	}
 	
